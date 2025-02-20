@@ -1,5 +1,7 @@
 # Application of Programming
 
+[Repos](github_repos.md)
+
 ## 00 Introduction
 
 [00 Introduction Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/00-Introduction.html)
