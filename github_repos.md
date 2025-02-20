@@ -37,7 +37,7 @@
 35. [https://github.com/YN1UJE/repo](https://github.com/YN1UJE/repo)  
 36. [https://github.com/GummyBear-w/aop113b](https://github.com/GummyBear-w/aop113b)  
 37. [https://github.com/noble752/nsysuhomework](https://github.com/noble752/nsysuhomework)  
-38. [girhub.com/Fis428/PC03](girhub.com/Fis428/PC03)  
+38. [https://github.com/Fis428/PC03](https://github.com/Fis428/PC03)
 39. [https://github.com/yy20021217/123456](https://github.com/yy20021217/123456)  
 40. [https://github.com/yunhsuan1009/yunhsuan](https://github.com/yunhsuan1009/yunhsuan)  
 41. [https://github.com/Tebbyrain/tom113b.git](https://github.com/Tebbyrain/tom113b.git)  
