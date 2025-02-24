@@ -10,7 +10,7 @@
 
 ## 01 Python Overview
 
-[01 Python Overview](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/01-python_overview.html)
+[01 Python Overview Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/01-python_overview.html)
 
 [01 Notebook](nb01.ipynb)
 
@@ -20,4 +20,5 @@
 
 ## 02 Web Crawler
 
+[02 Web Crawler Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/02-web_crawler.html)
 
