@@ -14,12 +14,12 @@
 
 [01 Notebook](nb01.ipynb)
 
-- [EX01-01 加法器](EX01_01_加法器.ipynb)
-- [EX01-02 BMI 計算機](EX01_02_BMI_計算.ipynb)
-- EX01-03 Rock-Paper-Scissors
-- EX01-04 終極密碼
-- EX01-05 Caesar Cipher: Encode and decode
-- EX01-06 簡易購物車
+- [EX01-01 加法器](exercises/ex01-01.png)
+- [EX01-02 BMI 計算機](exercises/ex01-02.png)
+- [EX01-03 Rock-Paper-Scissors](exercises/ex01-03.png)
+- [EX01-04 終極密碼](exercises/ex01-04.png)
+- [EX01-05 Caesar Cipher: Encode and decode](exercises/ex01-05.png)
+- [EX01-06 簡易購物車](exercises/ex01-06.png)
 - EX01-07 美食資訊查詢
 
 ## 02 Web Crawler
