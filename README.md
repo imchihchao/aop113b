@@ -26,3 +26,7 @@
 
 [02 Web Crawler Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/02-web_crawler.html)
 
+[02 Notebook](nb02.ipynb)
+
+- [EX02-01 My Chatbot](exercises/ex02-01.png)
+
