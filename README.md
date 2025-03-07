@@ -20,7 +20,7 @@
 - [EX01-04 終極密碼](exercises/ex01-04.png)
 - [EX01-05 Caesar Cipher: Encode and decode](exercises/ex01-05.png)
 - [EX01-06 簡易購物車](exercises/ex01-06.png)
-- [EX01-07 美食資訊查詢](exercises/ex01-07.png)
+- [EX01-07 美食資訊查詢](exercises/ex01-07.png) / [同學分享美食名單](foods.md)
 
 ## 02 Web Crawler
 
