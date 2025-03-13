@@ -29,4 +29,5 @@
 [02 Notebook](nb02.ipynb)
 
 - [EX02-01 My Chatbot](exercises/ex02-01.png)
+- [EX02-02 高雄紅橘線捷運車站位置查詢](exercises/ex02-02.png)
 
