@@ -33,4 +33,6 @@
 - [EX02-03 Yahoo 新聞儲存 Google 試算表](exercises/ex02-03.png)
 - [EX02-04 Download Pokemon Images](exercises/ex02-04.png)
 
+## 03 Data Analysis
 
+[03 Data Analysis Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/03-data_analysis.html)
