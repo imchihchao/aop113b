@@ -32,6 +32,8 @@
 - [EX02-02 高雄紅橘線捷運車站位置查詢](exercises/ex02-02.png)
 - [EX02-03 Yahoo 新聞儲存 Google 試算表](exercises/ex02-03.png)
 - [EX02-04 Download Pokemon Images](exercises/ex02-04.png)
+- [EX02-05 PTT Gossiping](exercises/ex02-05.png)
+- [EX02-06 開眼電影](exercises/ex02-06.png)
 
 ## 03 Data Analysis
 
