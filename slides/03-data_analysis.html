@@ -371,8 +371,10 @@ df.loc[<span class="hljs-built_in">len</span>(df)] = [<span class="hljs-number">
 <ul>
 <li>使用 concat()</li>
 </ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">new_data = {<span class="hljs-string">&#x27;ID&#x27;</span>: <span class="hljs-number">112</span>, <span class="hljs-string">&#x27;Name&#x27;</span>: <span class="hljs-string">&#x27;Lily&#x27;</span>, <span class="hljs-string">&#x27;Age&#x27;</span>: <span class="hljs-number">26</span>, <span class="hljs-string">&#x27;City&#x27;</span>: <span class="hljs-string">&#x27;Seattle&#x27;</span>, <span class="hljs-string">&#x27;Salary&#x27;</span>: <span class="hljs-number">55000</span>, <span class="hljs-string">&#x27;Department&#x27;</span>: <span class="hljs-string">&#x27;Marketing&#x27;</span>}
-df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=<span class="hljs-literal">True</span>)
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">new_data = [
+    {<span class="hljs-string">&#x27;ID&#x27;</span>: <span class="hljs-number">112</span>, <span class="hljs-string">&#x27;Name&#x27;</span>: <span class="hljs-string">&#x27;Lily&#x27;</span>, <span class="hljs-string">&#x27;Age&#x27;</span>: <span class="hljs-number">26</span>, <span class="hljs-string">&#x27;City&#x27;</span>: <span class="hljs-string">&#x27;Seattle&#x27;</span>, <span class="hljs-string">&#x27;Salary&#x27;</span>: <span class="hljs-number">55000</span>, <span class="hljs-string">&#x27;Department&#x27;</span>: <span class="hljs-string">&#x27;Marketing&#x27;</span>}
+]
+df = pd.concat([df, pd.DataFrame(new_data)], ignore_index=<span class="hljs-literal">True</span>)
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="36" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="62" data-size="16:9">
