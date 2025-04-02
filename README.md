@@ -34,6 +34,7 @@
 - [EX02-04 Download Pokemon Images](exercises/ex02-04.png)
 - [EX02-05 PTT Gossiping](exercises/ex02-05.png)
 - [EX02-06 開眼電影](exercises/ex02-06.png)
+- [EX02-07 KKDay](exercises/ex02-07.png)
 
 ## 03 Data Analysis
 
