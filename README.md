@@ -39,3 +39,14 @@
 ## 03 Data Analysis
 
 [03 Data Analysis Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/03-data_analysis.html)
+
+[03 Notebook](nb03.ipynb)
+
+
+
+
+
+
+
+
+
