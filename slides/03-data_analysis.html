@@ -617,11 +617,8 @@ df.head()
 <h3 id="pandasdataframeplot">pandas.DataFrame.plot()</h3>
 <p>pandas.DataFrame.plot() 是一個非常方便的函數，用來快速繪製DataFrame 或 Series 的圖形。它基於 matplotlib，因此它會生成一個標準的 Matplotlib 圖形，可以輕鬆地進行自訂和調整。</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">df.plot(kind=<span class="hljs-string">&#x27;line&#x27;</span>, **kwargs)
-<span class="hljs-comment"># line&#x27;：折線圖，預設值,&#x27;bar&#x27;：直條圖,&#x27;hist&#x27;：直方圖,&#x27;box&#x27;：箱型圖,&#x27;pie&#x27;：圓餅圖</span>
+<span class="hljs-comment"># line&#x27;：折線圖,&#x27;bar&#x27;：直條圖,&#x27;hist&#x27;：直方圖,&#x27;box&#x27;：箱型圖,&#x27;pie&#x27;：圓餅圖,&#x27;scatter&#x27;：散佈圖</span>
 </code></pre>
-<ul>
-<li>'</li>
-</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="60" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="65" data-size="16:9">
 <h3 id="pandasdataframeplot-1">pandas.DataFrame.plot()</h3>
@@ -632,7 +629,7 @@ data = {
     <span class="hljs-string">&#x27;Sales&#x27;</span>: [<span class="hljs-number">100</span>, <span class="hljs-number">150</span>, <span class="hljs-number">200</span>, <span class="hljs-number">250</span>]
 }
 df = pd.DataFrame(data)
-df.plot(kind=<span class="hljs-string">&#x27;bar&#x27;</span>, x=<span class="hljs-string">&#x27;Year&#x27;</span>, y=<span class="hljs-string">&#x27;Sales&#x27;</span>, title=<span class="hljs-string">&#x27;年銷售額&#x27;</span>, grid=<span class="hljs-literal">True</span>, figsize=(<span class="hljs-number">10</span>, <span class="hljs-number">6</span>))
+df.plot(kind=<span class="hljs-string">&#x27;bar&#x27;</span>, x=<span class="hljs-string">&#x27;Year&#x27;</span>, y=<span class="hljs-string">&#x27;Sales&#x27;</span>, title=<span class="hljs-string">&#x27;年銷售額&#x27;</span>, grid=<span class="hljs-literal">True</span>, color=<span class="hljs-string">&#x27;red&#x27;</span>, figsize=(<span class="hljs-number">10</span>, <span class="hljs-number">6</span>))
 plt.show()
 </code></pre>
 </section>
