@@ -334,10 +334,10 @@ df_gp.get_group(<span class="hljs-string">&#x27;IT&#x27;</span>)
 <ul>
 <li>取得 Name 和 Salary 二欄資料</li>
 <li>取出索引值 5 到 8 共 4 筆資料</li>
-<li>請問公司人員的平均薪水、及最高、最低薪水？</li>
-<li>公司共有幾個部門？</li>
 <li>找出年齡和薪水都高於平均值的人員</li>
-<li>列出根據年紀大小的排名</li>
+<li>請問公司人員的平均薪水、及最高、最低薪水？</li>
+<li>公司共有幾個部門？那個部門薪水最高？那個部門最年輕？</li>
+<li>年齡是否與薪資有關？</li>
 </ul>
 </li>
 </ul>
@@ -468,7 +468,7 @@ df[<span class="hljs-string">&#x27;Hire_Date&#x27;</span>] = pd.to_datetime(df[<
 <li>使用 pd.concat() 新增資料（<a href="https://github.com/imchihchao/aop113b/blob/main/materials/03-row_data.md">資料集</a>）</li>
 <li>找出空值的資料列，並填充空值（薪水依該部門平均值）</li>
 <li>刪除重複資料</li>
-<li>新增欄位 'NewSalary'，如果薪水小於平均值則薪水加 500，否則維持原薪水</li>
+<li>新增欄位 'NewSalary'，如果薪水小於平均值則薪水加 500，否則維持原薪水；新增欄位 'RankSalary' 填入薪水排名。</li>
 </ul>
 </li>
 </ul>
