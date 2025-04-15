@@ -44,6 +44,8 @@
 
 - [EX03-01 公司薪資概況Ⅰ](exercises/ex03-01.png)
 - [EX03-02 公司薪資概況Ⅱ](exercises/ex03-02.png)
+- [EX03-03 空氣品質指標(AQI)](exercises/ex03-03.png)
+- [EX03-04 薪情平台](exercises/ex03-04.png)
 
 
 
