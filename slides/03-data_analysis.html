@@ -541,7 +541,7 @@ df.head()
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="49" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="69" data-size="16:9">
 <h3 id="%E6%A8%9E%E7%B4%90%E5%88%86%E6%9E%90%E8%A1%A8">樞紐分析表</h3>
 <ul>
-<li>為什麼樞紐分析表？當原始資料太亂、太長、太難看懂，我們需要把資料「重新組織」成不同的角度來看。</li>
+<li>為什麼要樞紐分析表？當原始資料太亂、太長、太難看懂，我們需要把資料「重新組織」成不同的角度來看。</li>
 <li>pandas 的 pivot_table 可以根據某些欄位對資料進行彙總（aggregation），類似 Excel 裡的「樞紐分析表」。</li>
 </ul>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">pd.pivot_table(
@@ -764,9 +764,10 @@ plt.show()
 <li><a href="https://github.com/imchihchao/aop113b/blob/main/da_births.ipynb">請整併多張工作表</a>，99年到112年六都出生人口數成一張總表。</li>
 <li>完成以下任務：
 <ul>
-<li>使用 pivot_table 依年份觀察各縣市的出生數變化</li>
-<li>使用 pivot_table 計算，各縣市平均出生數（從 99 年到 112 年的平均值），並繪製折線圖</li>
-<li>使用 pivot_table 依縣市顯示最大與最小出生數（加上 aggfunc），並繪製箱形圖</li>
+<li>使用 pivot_table 依年份計算出生數的平均值，並繪製折線圖</li>
+<li>使用 pivot_table 依年份觀察各縣市的出生數，並繪製折線圖</li>
+<li>使用 pivot_table 依縣市觀察平均最大最小出生數，並繪製長條圖</li>
+<li>使用 pivot_table 依縣市出生數繪製箱形圖</li>
 </ul>
 </li>
 </ul>
@@ -781,8 +782,8 @@ plt.show()
 <li>顯示每筆資料概覽總金額和小費的關係</li>
 <li>總金額和小費的關係中，是否抽菸的情形如何？</li>
 <li>總金額和小費的關係中，考慮是否抽菸及用餐時段的情形如何？</li>
-<li>星期某天用餐數量及消費金額的關係</li>
-<li>星期某天用餐數量及消費金額，加上性別的關係（資料點不重疊）</li>
+<li>星期某天用餐數量及消費金額的關係（使用 catplot()）</li>
+<li>星期某天用餐數量及消費金額，加上性別的關係</li>
 <li>使用箱形圖顯示不同性別，小費的高低情形（kind=box）</li>
 </ul>
 </li>
