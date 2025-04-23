@@ -690,6 +690,25 @@ plt.rcParams[<span class="hljs-string">&quot;axes.unicode_minus&quot;</span>] = 
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="65" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
+<h3 id="ex03-06-%E5%87%BA%E7%94%9F%E4%BA%BA%E5%8F%A3%E6%95%B8">EX03-06 出生人口數</h3>
+<ul>
+<li>Dataset: <a href="https://www.ris.gov.tw/app/portal/346">https://www.ris.gov.tw/app/portal/346</a></li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">!wget -O births.xls https://raw.githubusercontent.com/imchihchao/aop113b/main/materials/03-births.xls
+</code></pre>
+<ul>
+<li><a href="https://github.com/imchihchao/aop113b/blob/main/da_births.ipynb">請整併多張工作表</a>，99年到112年六都出生人口數成一張總表。</li>
+<li>完成以下任務：
+<ul>
+<li>使用 pivot_table 依年份計算出生數的平均值，並繪製折線圖</li>
+<li>使用 pivot_table 依年份觀察各縣市的出生數，並繪製折線圖</li>
+<li>使用 pivot_table 依縣市觀察平均最大最小出生數，並繪製長條圖</li>
+<li>依歷年縣市出生數繪製箱形圖</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="66" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
 <h3 id="seaborn">Seaborn</h3>
 <p>Seaborn 是一個建立在 Matplotlib 之上的 Python 資料視覺化套件，專門設計來讓統計圖表更簡單、美觀又具表達力。</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> seaborn <span class="hljs-keyword">as</span> sns
@@ -704,14 +723,14 @@ plt.title(<span class="hljs-string">&quot;Total Bill vs Tip&quot;</span>)
 plt.show()
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="66" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="67" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
 <h3 id="overview-of-seaborn-plotting-functions">Overview of seaborn plotting functions</h3>
 <ul>
 <li><a href="https://seaborn.pydata.org/tutorial/function_overview.html#figure-level-vs-axes-level-functions">Figure-level vs. axes-level functions</a><br />
 <img src="images/03-seaborn.png" width="650" /></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="67" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="68" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
 <h3 id="seaborn-1">Seaborn</h3>
 <table>
 <thead>
@@ -759,25 +778,6 @@ plt.show()
 </tr>
 </tbody>
 </table>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="68" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
-<h3 id="ex03-06-%E5%87%BA%E7%94%9F%E4%BA%BA%E5%8F%A3%E6%95%B8">EX03-06 出生人口數</h3>
-<ul>
-<li>Dataset: <a href="https://www.ris.gov.tw/app/portal/346">https://www.ris.gov.tw/app/portal/346</a></li>
-</ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">!wget -O births.xls https://raw.githubusercontent.com/imchihchao/aop113b/main/materials/03-births.xls
-</code></pre>
-<ul>
-<li><a href="https://github.com/imchihchao/aop113b/blob/main/da_births.ipynb">請整併多張工作表</a>，99年到112年六都出生人口數成一張總表。</li>
-<li>完成以下任務：
-<ul>
-<li>使用 pivot_table 依年份計算出生數的平均值，並繪製折線圖</li>
-<li>使用 pivot_table 依年份觀察各縣市的出生數，並繪製折線圖</li>
-<li>使用 pivot_table 依縣市觀察平均最大最小出生數，並繪製長條圖</li>
-<li>使用 pivot_table 依縣市出生數繪製箱形圖</li>
-</ul>
-</li>
-</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="69" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="70" data-size="16:9">
 <h3 id="ex03-07-tips">EX03-07 Tips</h3>
