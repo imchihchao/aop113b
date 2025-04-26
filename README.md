@@ -46,6 +46,11 @@
 - [EX03-02 公司薪資概況Ⅱ](exercises/ex03-02.png)
 - [EX03-03 空氣品質指標(AQI)](exercises/ex03-03.png)
 - [EX03-04 薪情平台](exercises/ex03-04.png)
+- [EX03-05 台灣股票市場個股每日成交資訊](exercises/ex03-05.png)
+- [EX03-06 出生人口數](exercises/ex03-06.png)
+- [EX03-07 Tips](exercises/ex03-07.png)
+
+
 
 
 
