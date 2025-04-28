@@ -121,7 +121,7 @@
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1p-A8-M_EcXPVLubBJ7rkwpqj5_cUeIeJCJFLDVgHNW0/edit?usp=sharing">Create a LINE Channel</a></li>
 <li><a href="https://developers.line.biz/zh-hant/">LINE Developers</a>, <a href="https://tw.linebiz.com/">LINE Biz-Solutions</a><br />
-<img src="images/05-creat_line_bot.png" width="1100" /></li>
+<img src="images/05-create_line_bot.png" width="1100" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="18" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="77" data-size="16:9">
@@ -205,7 +205,7 @@ run_with_ngrok(app)
 <span class="hljs-meta">@app.route(<span class="hljs-params"><span class="hljs-string">&#x27;/form&#x27;</span>, methods=[<span class="hljs-string">&#x27;GET&#x27;</span>, <span class="hljs-string">&#x27;POST&#x27;</span>]</span>)</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">form</span>():
     <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&#x27;POST&#x27;</span>:
-        name = request.form[<span class="hljs-string">&#x27;name&#x27;</span>]
+        name = request.form.get(<span class="hljs-string">&#x27;name&#x27;</span>)
         <span class="hljs-keyword">return</span> <span class="hljs-string">f&quot;Hello, <span class="hljs-subst">{name}</span>!&quot;</span>
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;&#x27;&#x27;&#x27;
@@ -287,7 +287,6 @@ Message Type</li>
 <th>發送方式</th>
 <th>是否主動</th>
 <th>使用對象</th>
-<th>限制</th>
 <th>適用情境</th>
 </tr>
 </thead>
@@ -296,28 +295,24 @@ Message Type</li>
 <td>Reply Message</td>
 <td>被動</td>
 <td>觸發事件的單一使用者</td>
-<td>有效期短、一次性</td>
 <td>回應使用者輸入</td>
 </tr>
 <tr>
 <td>Push Message</td>
 <td>主動</td>
 <td>特定單一使用者</td>
-<td>推播次數限制</td>
 <td>通知、提醒</td>
 </tr>
 <tr>
 <td>Multicast</td>
 <td>主動</td>
 <td>多位指定使用者</td>
-<td>限帳號權限與推播費</td>
 <td>分眾訊息推播</td>
 </tr>
 <tr>
 <td>Broadcast</td>
 <td>主動</td>
 <td>所有加好友的使用者</td>
-<td>僅部分帳號可用</td>
 <td>公告、行銷廣播</td>
 </tr>
 </tbody>
