@@ -56,6 +56,9 @@
 
 [05 Notebook](nb05.ipynb)
 
+- [EX05-01 Echo Bot](exercises/ex05-01.png)
+
+
 
 
 
