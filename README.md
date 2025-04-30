@@ -54,6 +54,7 @@
 
 [05 Web API Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/05-web_api.html)
 
+[05 Notebook](nb05.ipynb)
 
 
 
