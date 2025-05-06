@@ -59,6 +59,10 @@
 - [EX05-01 Echo Bot](exercises/ex05-01.png)
 
 
+```python
+!pip install -q flask pyngrok flask_ngrok line-bot-sdk
+```
+
 
 ```python
 # for colab
