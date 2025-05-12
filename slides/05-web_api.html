@@ -750,9 +750,9 @@ template_message = TemplateMessage(
 <span class="hljs-meta">@handler.add(<span class="hljs-params">PostbackEvent</span>)</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">handle_postback</span>(<span class="hljs-params">event</span>):
     <span class="hljs-keyword">with</span> ApiClient(configuration) <span class="hljs-keyword">as</span> api_client:
-        <span class="hljs-keyword">if</span> event.postback.data == <span class="hljs-string">&#x27;action=vote&amp;item=a&#x27;</span>:
+        <span class="hljs-keyword">if</span> event.postback.data == <span class="hljs-string">&#x27;action=add&amp;item=productA&#x27;</span>:
             reply_message = TextMessage(text=<span class="hljs-string">&#x27;你選了 商品 A&#x27;</span>)
-        <span class="hljs-keyword">elif</span> event.postback.data == <span class="hljs-string">&#x27;action=vote&amp;item=b&#x27;</span>:
+        <span class="hljs-keyword">elif</span> event.postback.data == <span class="hljs-string">&#x27;action=add&amp;item=productB&#x27;</span>:
             reply_message = TextMessage(text=<span class="hljs-string">&#x27;你選了 商品 B&#x27;</span>)
         line_bot_api = MessagingApi(api_client)
         line_bot_api.reply_message(
