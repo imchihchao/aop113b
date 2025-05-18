@@ -1,0 +1,1005 @@
+<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1;view-transition-name:__bespoke_marp_transition_osc__}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px);word-wrap:break-word;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@charset "UTF-8";@import "https://fonts.bunny.net/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap";div#\:\$p > svg > foreignObject > section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center;-webkit-text-size-adjust:100%;text-size-adjust:100%}div#\:\$p > svg > foreignObject > section::after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p > svg > foreignObject > section:not([data-marpit-pagination])::after{display:none}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:2em;margin:0.67em 0}div#\:\$p > svg > foreignObject > section video::-webkit-media-controls{will-change:transform}@page {size:1280px 720px;margin:0}@media print{html, body{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p > svg > foreignObject > section{page-break-before:always;break-before:page}div#\:\$p > svg > foreignObject > section, div#\:\$p > svg > foreignObject > section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#\:\$p > svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p > svg > foreignObject > :where(section){container-type:size}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"]{direction:ltr}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] > svg{overflow:visible;min-height:1px;min-width:1px}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] > svg a{fill:blue;stroke:blue}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][display="true"]{display:block;text-align:center;margin:1em 0}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][display="true"][width="full"]{display:flex}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][justify="left"]{text-align:left}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][justify="right"]{text-align:right}div#\:\$p > svg > foreignObject > section g[data-mml-node="merror"] > g{fill:red;stroke:red}div#\:\$p > svg > foreignObject > section g[data-mml-node="merror"] > rect[data-background]{fill:yellow;stroke:none}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > line[data-line], div#\:\$p > svg > foreignObject > section svg[data-table] > g > line[data-line]{stroke-width:70px;fill:none}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > rect[data-frame], div#\:\$p > svg > foreignObject > section svg[data-table] > g > rect[data-frame]{stroke-width:70px;fill:none}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > .mjx-dashed, div#\:\$p > svg > foreignObject > section svg[data-table] > g > .mjx-dashed{stroke-dasharray:140}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > .mjx-dotted, div#\:\$p > svg > foreignObject > section svg[data-table] > g > .mjx-dotted{stroke-linecap:round;stroke-dasharray:0,140}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > g > svg{overflow:visible}div#\:\$p > svg > foreignObject > section [jax="SVG"] mjx-tool{display:inline-block;position:relative;width:0;height:0}div#\:\$p > svg > foreignObject > section [jax="SVG"] mjx-tool > mjx-tip{position:absolute;top:0;left:0}div#\:\$p > svg > foreignObject > section mjx-tool > mjx-tip{display:inline-block;padding:.2em;border:1px solid #888;font-size:70%;background-color:#F8F8F8;color:black;box-shadow:2px 2px 5px #AAAAAA}div#\:\$p > svg > foreignObject > section g[data-mml-node="maction"][data-toggle]{cursor:pointer}div#\:\$p > svg > foreignObject > section mjx-status{display:block;position:fixed;left:1em;bottom:1em;min-width:25%;padding:.2em .4em;border:1px solid #888;font-size:90%;background-color:#F8F8F8;color:black}div#\:\$p > svg > foreignObject > section foreignObject[data-mjx-xml]{font-family:initial;line-height:normal;overflow:visible}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] path[data-c], div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] use[data-c]{stroke-width:3}@media print{div#\:\$p > svg > foreignObject > section mjx-container[jax=SVG] path[data-c],div#\:\$p > svg > foreignObject > section mjx-container[jax=SVG] use[data-c]{stroke-width:0}}div#\:\$p > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}/*!
+ * Marp / Marpit Gaia theme.
+ *
+ * @theme gaia
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) code.hljs{display:block;overflow-x:auto;padding:1em}div#\:\$p > svg > foreignObject > section code.hljs{padding:3px 5px}div#\:\$p > svg > foreignObject > section .hljs{background:#000;color:#f8f8f8}div#\:\$p > svg > foreignObject > section .hljs-comment,div#\:\$p > svg > foreignObject > section .hljs-quote{color:#aeaeae;font-style:italic}div#\:\$p > svg > foreignObject > section .hljs-keyword,div#\:\$p > svg > foreignObject > section .hljs-selector-tag,div#\:\$p > svg > foreignObject > section .hljs-type{color:#e28964}div#\:\$p > svg > foreignObject > section .hljs-string{color:#65b042}div#\:\$p > svg > foreignObject > section .hljs-subst{color:#daefa3}div#\:\$p > svg > foreignObject > section .hljs-link,div#\:\$p > svg > foreignObject > section .hljs-regexp{color:#e9c062}div#\:\$p > svg > foreignObject > section .hljs-name,div#\:\$p > svg > foreignObject > section .hljs-section,div#\:\$p > svg > foreignObject > section .hljs-tag,div#\:\$p > svg > foreignObject > section .hljs-title{color:#89bdff}div#\:\$p > svg > foreignObject > section .hljs-class .hljs-title,div#\:\$p > svg > foreignObject > section .hljs-doctag,div#\:\$p > svg > foreignObject > section .hljs-title.class_{text-decoration:underline}div#\:\$p > svg > foreignObject > section .hljs-bullet,div#\:\$p > svg > foreignObject > section .hljs-number,div#\:\$p > svg > foreignObject > section .hljs-symbol{color:#3387cc}div#\:\$p > svg > foreignObject > section .hljs-params,div#\:\$p > svg > foreignObject > section .hljs-template-variable,div#\:\$p > svg > foreignObject > section .hljs-variable{color:#3e87e3}div#\:\$p > svg > foreignObject > section .hljs-attribute{color:#cda869}div#\:\$p > svg > foreignObject > section .hljs-meta{color:#8996a8}div#\:\$p > svg > foreignObject > section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}div#\:\$p > svg > foreignObject > section .hljs-addition{background-color:#253b22;color:#f8f8f8}div#\:\$p > svg > foreignObject > section .hljs-deletion{background-color:#420e09;color:#f8f8f8}div#\:\$p > svg > foreignObject > section .hljs-selector-class{color:#9b703f}div#\:\$p > svg > foreignObject > section .hljs-selector-id{color:#8b98ab}div#\:\$p > svg > foreignObject > section .hljs-emphasis{font-style:italic}div#\:\$p > svg > foreignObject > section .hljs-strong{font-weight:700}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){margin:.5em 0 0}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) strong,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) strong,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) strong,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) strong,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) strong,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) strong{font-weight:inherit}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6)::part(auto-scaling){max-height:580px}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:1.8em}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){font-size:1.5em}div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){font-size:1.3em}div#\:\$p > svg > foreignObject > section :is(h4, marp-h4){font-size:1.1em}div#\:\$p > svg > foreignObject > section :is(h5, marp-h5){font-size:1em}div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){font-size:.9em}div#\:\$p > svg > foreignObject > section blockquote,div#\:\$p > svg > foreignObject > section p{margin:1em 0 0}div#\:\$p > svg > foreignObject > section ol>li,div#\:\$p > svg > foreignObject > section ul>li{margin:.3em 0 0}div#\:\$p > svg > foreignObject > section ol>li>p,div#\:\$p > svg > foreignObject > section ul>li>p{margin:.6em 0 0}div#\:\$p > svg > foreignObject > section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){display:block;margin:1em 0 0;overflow:visible}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) code{box-sizing:border-box;font-size:.7em;margin:0;min-width:100%;padding:.5em}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)::part(auto-scaling){max-height:calc(580px - 1em)}div#\:\$p > svg > foreignObject > section blockquote{margin:1em 0 0;padding:0 1em;position:relative}div#\:\$p > svg > foreignObject > section blockquote:after,div#\:\$p > svg > foreignObject > section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}div#\:\$p > svg > foreignObject > section blockquote:before{left:0;top:0}div#\:\$p > svg > foreignObject > section blockquote:after{bottom:0;right:0;transform:rotate(180deg)}div#\:\$p > svg > foreignObject > section blockquote>:first-child{margin-top:0}div#\:\$p > svg > foreignObject > section mark{background:transparent}div#\:\$p > svg > foreignObject > section table{border-collapse:collapse;border-spacing:0;margin:1em 0 0}div#\:\$p > svg > foreignObject > section table td,div#\:\$p > svg > foreignObject > section table th{border-style:solid;border-width:1px;padding:.2em .4em}div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header,div#\:\$p > svg > foreignObject > section:after{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}div#\:\$p > svg > foreignObject > section:after{--marpit-root-font-size:66%;}div#\:\$p > svg > foreignObject > section header{top:0}div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header{left:0;right:0}div#\:\$p > svg > foreignObject > section footer{bottom:0}div#\:\$p > svg > foreignObject > section{background-color:var(--color-background);background-image:linear-gradient(135deg, hsla(0,0%,53%,0), hsla(0,0%,53%,.02) 50%, hsla(0,0%,100%,0) 0, hsla(0,0%,100%,.05));color:var(--color-foreground);font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;font-size:35px;height:720px;letter-spacing:1.25px;line-height:1.35;padding:70px;width:1280px;word-wrap:break-word;--color-background:#fff8e1;--color-background-stripe:rgba(69,90,100,.1);--color-foreground:#455a64;--color-dimmed:#6a7a7d;--color-highlight:#0288d1;}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size:35px;}div#\:\$p > svg > foreignObject > section:after{bottom:0;font-size:80%;right:0}div#\:\$p > svg > foreignObject > section:after{--marpit-root-font-size:80%;}div#\:\$p > svg > foreignObject > section a,div#\:\$p > svg > foreignObject > section mark{color:var(--color-highlight)}div#\:\$p > svg > foreignObject > section code{background:var(--color-dimmed);color:var(--color-background)}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) strong,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) strong,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) strong,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) strong,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) strong,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) strong{color:var(--color-highlight)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){background:var(--color-foreground)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)>code{background:transparent}div#\:\$p > svg > foreignObject > section blockquote:after,div#\:\$p > svg > foreignObject > section blockquote:before,div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header,div#\:\$p > svg > foreignObject > section section:after{color:var(--color-dimmed)}div#\:\$p > svg > foreignObject > section table td,div#\:\$p > svg > foreignObject > section table th{border-color:var(--color-foreground)}div#\:\$p > svg > foreignObject > section table thead th{background:var(--color-foreground);color:var(--color-background)}div#\:\$p > svg > foreignObject > section table tbody>tr:nth-child(odd) td,div#\:\$p > svg > foreignObject > section table tbody>tr:nth-child(odd) th{background:var(--color-background-stripe, transparent)}div#\:\$p > svg > foreignObject > section>:first-child,div#\:\$p > svg > foreignObject > section>header:first-child+*{margin-top:0}div#\:\$p > svg > foreignObject > section:where(.invert){--color-background:#455a64;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#dad8c8;--color-highlight:#81d4fa;}div#\:\$p > svg > foreignObject > section:where(.gaia){--color-background:#0288d1;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#cce2de;--color-highlight:#81d4fa;}div#\:\$p > svg > foreignObject > section:where(.lead){align-items:stretch;flex-flow:column nowrap;place-content:safe center center}div#\:\$p > svg > foreignObject > section:where(.lead) :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h6, marp-h6){text-align:center}div#\:\$p > svg > foreignObject > section:where(.lead) p{text-align:center}div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h1, marp-h1),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h2, marp-h2),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h3, marp-h3),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h4, marp-h4),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h5, marp-h5),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h6, marp-h6),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>p{text-align:left}div#\:\$p > svg > foreignObject > section:where(.lead) ol>li>p,div#\:\$p > svg > foreignObject > section:where(.lead) ul>li>p{text-align:left}div#\:\$p > svg > foreignObject > section:where(.lead) table{margin-left:auto;margin-right:auto}div#\:\$p > svg > foreignObject > section{width:1280px;height:720px}div#\:\$p > svg > foreignObject > :where(section):not([\20 root]){--color-background: #fff;--color-foreground: #333;--color-highlight: #69f;--color-dimmed: #888;}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::after, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::after{display:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction="vertical"]{flex-direction:column}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split] > div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split, 50%)}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split="right"] > div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure > figcaption{position:absolute;border:0;clip:rect(0, 0, 0, 0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"], div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"]{background:transparent!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"], div#\:\$p > svg[data-marpit-svg] > foreignObject[data-marpit-advanced-background="pseudo"]{pointer-events:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background-split]{width:100%;height:100%}
+</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" style="--class:lead;--theme:gaia;" data-size="16:9">
+<h1 id="%E7%A8%8B%E5%BC%8F%E6%87%89%E7%94%A8">程式應用</h1>
+<h1 id="machine-learning">Machine Learning</h1>
+<p>許智超<br />
+<a href="mailto:chihchao@go.edu.tw">chihchao@go.edu.tw</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="2" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7">人工智慧</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="3" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="what-comes-to-your-mind-when-you-hear-ai">What Comes to Your Mind When You Hear AI?</h3>
+<img src="images/04-whatsai_1.jpg" width="500" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="4" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="what-comes-to-your-mind-when-you-hear-ai-1">What Comes to Your Mind When You Hear AI?</h3>
+<br />
+<img src="images/04-whatsai_2.jpg" width="700" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="5" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="what-comes-to-your-mind-when-you-hear-ai-2">What Comes to Your Mind When You Hear AI?</h3>
+<br />
+<img src="images/04-whatsai_3.png" width="800" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="6" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="what-is-artificial-intelligence">What is Artificial Intelligence?</h3>
+<blockquote>
+<p>Artificial intelligence, or AI, is technology that enables computers and machines to simulate human intelligence and problem-solving capabilities.</p>
+</blockquote>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="7" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="alan-turing">Alan Turing</h3>
+<p>艾倫圖靈，1912-1954<br />
+英國電腦科學家、數學家、邏輯學家、密碼分析學家和理論生物學家。<br />
+被譽為電腦科學與人工智慧之父。</p>
+<img src="images/04-alan_turing.png" width="250" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="8" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="turing-test">Turing Test</h3>
+<br />
+<img src="images/04-turing_test_1.png" width="550" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="9" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="turing-test-1">Turing Test</h3>
+<br />
+<img src="images/04-turing_test_2.png" width="550" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="10" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="turing-test-2">Turing Test</h3>
+<br />
+<img src="images/04-turing_test_3.png" width="550" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="11" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="turing-test-3">Turing Test</h3>
+<br />
+<img src="images/04-turing_test_4.png" width="550" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="12" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E7%9A%84%E7%99%BC%E5%B1%95">人工智慧的發展</h3>
+<br />
+<img src="images/04-ai_dev.png" width="1200" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="13" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92">人工智慧、機器學習、深度學習</h3>
+<br />
+<img src="images/04-ai_ml_dl.png" width="700" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="14" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92">機器學習</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="15" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="love-machine">Love Machine</h3>
+<br />
+<img src="images/04-love_machine.png" width="800" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="16" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="what-is-machine-learning">What is Machine Learning?</h3>
+<blockquote>
+<p>Machine learning is a field of study in artificial intelligence (AI) and computer science which focuses on the use of <strong>data and algorithms</strong> to imitate the way that humans learn, gradually improving its accuracy.</p>
+</blockquote>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="17" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%83%B3%E8%B2%B7%E4%BA%8C%E6%89%8B%E8%BB%8A">想買二手車?</h3>
+<br />
+<img src="images/04-why_ml_1.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="18" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BA%8C%E6%89%8B%E8%BB%8A%E5%83%B9%E5%92%8C%E4%BB%80%E9%BA%BC%E5%9B%A0%E7%B4%A0%E6%9C%89%E9%97%9C">二手車價和什麼因素有關?</h3>
+<br />
+<img src="images/04-why_ml_2.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="19" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BA%8C%E6%89%8B%E8%BB%8A%E5%83%B9%E5%8F%AA%E5%92%8C%E8%BB%8A%E9%BD%A1%E6%9C%89%E9%97%9C">二手車價只和車齡有關?</h3>
+<br />
+<img src="images/04-why_ml_3.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="20" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%9C%A8%E5%81%9A%E4%BB%80%E9%BA%BC">機器學習在做什麼？</h3>
+<br />
+<img src="images/04-what_ml_do_1.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="21" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%9C%A8%E5%81%9A%E4%BB%80%E9%BA%BC-1">機器學習在做什麼？</h3>
+<br />
+<img src="images/04-what_ml_do_2.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="22" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%9C%A8%E5%81%9A%E4%BB%80%E9%BA%BC-2">機器學習在做什麼？</h3>
+<br />
+<img src="images/04-what_ml_do_3.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="23" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%9C%A8%E5%81%9A%E4%BB%80%E9%BA%BC-3">機器學習在做什麼？</h3>
+<br />
+<img src="images/04-what_ml_do_4.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="24" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%9C%A8%E5%81%9A%E4%BB%80%E9%BA%BC-4">機器學習在做什麼？</h3>
+<br />
+<img src="images/04-what_ml_do_5.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="25" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%A6%82%E4%BD%95%E5%AD%B8%E7%BF%92">機器如何學習？</h3>
+<br />
+<img src="images/04-ai_for_ocean.png" width="800" />
+<p><a href="https://studio.code.org/s/oceans/lessons/1/levels/1">https://studio.code.org/s/oceans/lessons/1/levels/1</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="26" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E8%87%AA%E5%8B%95%E6%89%BE%E4%B8%80%E5%80%8B%E5%87%BD%E5%BC%8F">機器自動找一個函式</h3>
+<br />
+<img src="images/04-find_func_1.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="27" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E8%87%AA%E5%8B%95%E6%89%BE%E4%B8%80%E5%80%8B%E5%87%BD%E5%BC%8F-1">機器自動找一個函式</h3>
+<p>線那麼多，要採用那一條？<br />
+<img src="images/04-loss_func_1.png" width="550" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="28" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E8%87%AA%E5%8B%95%E6%89%BE%E4%B8%80%E5%80%8B%E5%87%BD%E5%BC%8F-2">機器自動找一個函式</h3>
+<p>計算每個資料點到線段的距離（MSE，均方誤差），愈小愈好。<br />
+<img src="images/04-loss_func_2.png" width="550" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="29" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E8%87%AA%E5%8B%95%E6%89%BE%E4%B8%80%E5%80%8B%E5%87%BD%E5%BC%8F-3">機器自動找一個函式</h3>
+<p>MSE 是一條曲線，找到最低點。<br />
+<img src="images/04-loss_func_3.png" width="550" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="30" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E8%87%AA%E5%8B%95%E6%89%BE%E4%B8%80%E5%80%8B%E5%87%BD%E5%BC%8F-4">機器自動找一個函式</h3>
+<br />
+<img src="images/04-find_func_2.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="31" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84%E4%BB%BB%E5%8B%99">機器學習的任務</h3>
+<img src="images/04-ml_missions.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="32" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%BF%B4%E6%AD%B8regression">迴歸（Regression）</h3>
+<ul>
+<li>預測的目標是連續的值</li>
+<li>常見演算法，Linear Regression</li>
+<li>例如，預測股價、房價</li>
+</ul>
+<img src="images/04-ml_regression_1.png" width="900" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="33" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<img src="images/04-ml_regression_2.png" width="1200" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="34" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<img src="images/04-ml_regression_3.png" width="1200" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="35" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<img src="images/04-ml_regression_4.png" width="1200" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="36" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<img src="images/04-ml_regression_5.png" width="1200" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="37" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%88%86%E9%A1%9Eclassification">分類（Classification）</h3>
+<ul>
+<li>預測的目標是不連續的值（項目種類）</li>
+<li>常見演算法，Linear SVM, Decision Tree, Random Forest, Logistic Regression</li>
+<li>例如，垃圾郵件、分辨貓狗</li>
+</ul>
+<img src="images/04-ml_classification_1.png" width="900" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="38" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<img src="images/04-ml_classification_2.png" width="1075" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="39" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<img src="images/04-ml_classification_3.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="40" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%88%86%E7%BE%A4clustering">分群（Clustering）</h3>
+<ul>
+<li>將特徵相似的樣本分在同一組</li>
+<li>常見演算法，K-means, K-modes</li>
+<li>例如，顧客分群</li>
+<li><a href="https://www.ptt.cc/bbs/Gossiping/M.1714123413.A.E1C.html">[問卦] Google餐廳評價，這樣看最準<img class="emoji" draggable="false" alt="☺" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/263a.svg" data-marp-twemoji=""/></a></li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="41" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<br />
+<img src="images/04-ml_clustering_1.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="42" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<br />
+<img src="images/04-ml_clustering_2.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="43" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%A6%82%E4%BD%95%E9%81%B8%E6%93%87%E6%BC%94%E7%AE%97%E6%B3%95">如何選擇演算法</h3>
+<img src="images/04-ml_map.png" width="900" />
+<p><a href="https://scikit-learn.org/stable/machine_learning_map.html">Choosing the right estimator</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="44" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84%E6%B5%81%E7%A8%8B">機器學習的流程</h3>
+<br />
+<img src="images/04-steps.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="45" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84%E8%A1%93%E8%AA%9E">機器學習的術語</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="46" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84%E8%A1%93%E8%AA%9E-1">機器學習的術語</h3>
+<ul>
+<li>特徵（Feature）：特徵指的是用於描述資料樣本的屬性變量。</li>
+<li>標籤（Label）：標籤指的是我們希望學習和預測的目標值。</li>
+<li>樣本（Example）：樣本指的是單個的數據實例，通常由多個特徵值和一個標籤值組成。</li>
+<li>模型（Model）：模型指的是機器學習演算法通過訓練資料集而學習到的映射函數。</li>
+<li>訓練集（Training Set）：訓練集是用來讓模型“學習”的那部分資料。</li>
+<li>測試集（Test Set）：測試集是在模型訓練完成後，用於評估模型在不同樣本上的預測能力的那部分資料。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="47" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BD%8E%E5%BA%A6%E6%93%AC%E5%90%88%E8%88%87%E9%81%8E%E5%BA%A6%E6%93%AC%E5%90%88">低度擬合與過度擬合</h3>
+<ul>
+<li>低度擬合（Underfitting）<br />
+當一個模型無法很好地擷取特徵值與目標值之間的關係，來獲取數據中的規律和趨勢時，就會低度擬合。可能原因包括模型過於簡單、訓練資料集太小或是特徵選擇不當等。</li>
+<li>過度擬合（Overfitting）<br />
+當一個模型為了符合訓練資料的細微特徵，讓訓練資料有很好的執行效果，就有可能過度擬合，對於測試資料的效果反而不好。可能原因包括模型過於複雜、訓練資料集的樣本數量不足或特徵數量過多等。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="48" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BD%8E%E5%BA%A6%E6%93%AC%E5%90%88%E8%88%87%E9%81%8E%E5%BA%A6%E6%93%AC%E5%90%88-1">低度擬合與過度擬合</h3>
+<img src="images/04-overfitting.png" width="1100" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="49" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86data-preprocessing">資料前處理（Data Preprocessing）</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="50" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%B3%87%E6%96%99%E5%89%8D%E8%99%95%E7%90%86">資料前處理</h3>
+<ul>
+<li>資料前處理是指在把資料送進機器學習或深度學習模型「之前」，我們對資料所做的一系列整理、清洗和轉換的步驟。</li>
+<li>資料前處理包含處理缺失值（例如空白、遺漏的資料）、資料格式轉換（例如把文字轉成數字）、數值標準化或正規化（讓資料的範圍一致）、特徵選擇或特徵工程（挑出對模型最有幫助的資料欄位）、資料去除異常值（處理極端數值）、分類資料編碼（像是把性別「男/女」轉成 0 和 1）、資料分割（分成訓練資料、驗證資料、測試資料）</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="51" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9B">數值資料轉換</h3>
+<p>在機器學習與深度學習中，我們會使用很多資料來訓練模型。這些資料會有許多特徵（Feature）。舉例來說，我們要預測二手車的價格，我們可能會有以下幾個特徵：<br />
+<img src="images/04-car_dataset_std.png" width="500" /><br />
+這些特徵的<strong>數值大小差異很大</strong>，有的可能是個位數、有的可能是幾千。這樣的差異會讓模型在學習時<strong>偏向注意數值大的特徵</strong>，而忽略掉數值小的特徵，進而影響訓練結果。</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="52" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9B-1">數值資料轉換</h3>
+<p>為了解決這個問題，我們就會進行數值資料的轉換，主要採用的方式：</p>
+<ul>
+<li>標準化（Standardization）：<br />
+讓資料的平均數變成 0，標準差變成 1，如：Z 分數標準化</li>
+<li>正規化（Normalization）：<br />
+將資料縮放到某個範圍（例如 0 到 1），如：最大最小值正規化</li>
+</ul>
+<p>這樣的轉換可以讓所有特徵的數值落在相似的範圍內，不會讓某些特徵因為數值大就佔據太大權重，讓模型更公平、更有效率地學習。</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="53" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="z-%E5%88%86%E6%95%B8%E6%A8%99%E6%BA%96%E5%8C%96z-score-standardization">Z 分數標準化（Z-score Standardization）</h3>
+<ul>
+<li>優點：<br />
+保留資料分佈資訊：考慮資料的平均與變異程度，對常態分佈的資料尤其合適。<br />
+不受最大/最小極端值限制：不會被單一極端值壓縮整體數值範圍。</li>
+<li>缺點：<br />
+對極端值敏感：雖然不像 Min-Max 那樣明顯，但極端值仍會影響平均與標準差。<br />
+不保證範圍一致：標準化後的值理論上無上限或下限（不像 Min-Max 保證落在 0~1 範圍）。</li>
+<li>適合：適合用於統計方法或機器學習模型（如 SVM, KNN, PCA 等）。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="54" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="z-%E5%88%86%E6%95%B8%E6%A8%99%E6%BA%96%E5%8C%96z-score-standardization-1">Z 分數標準化（Z-score Standardization）</h3>
+<p>Z 分數的計算方式是：</p>
+<p><mjx-container class="MathJax" jax="SVG" display="true" style="margin: 0;"><svg style="vertical-align: -1.577ex; display: block; width: 100%; height: auto; max-height: 4.425ex;" xmlns="http://www.w3.org/2000/svg" width="10.489ex" height="4.425ex" role="img" focusable="false" viewBox="0 -1259 4636 1956"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"></path></g><g data-mml-node="mo" transform="translate(742.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(1798.6,0)"><g data-mml-node="mrow" transform="translate(220,676)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(794.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(1794.4,0)"><path data-c="1D707" d="M58 -216Q44 -216 34 -208T23 -186Q23 -176 96 116T173 414Q186 442 219 442Q231 441 239 435T249 423T251 413Q251 401 220 279T187 142Q185 131 185 107V99Q185 26 252 26Q261 26 270 27T287 31T302 38T315 45T327 55T338 65T348 77T356 88T365 100L372 110L408 253Q444 395 448 404Q461 431 491 431Q504 431 512 424T523 412T525 402L449 84Q448 79 448 68Q448 43 455 35T476 26Q485 27 496 35Q517 55 537 131Q543 151 547 152Q549 153 557 153H561Q580 153 580 144Q580 138 575 117T555 63T523 13Q510 0 491 -8Q483 -10 467 -10Q446 -10 429 -4T402 11T385 29T376 44T374 51L368 45Q362 39 350 30T324 12T288 -4T246 -11Q199 -11 153 12L129 -85Q108 -167 104 -180T92 -202Q76 -216 58 -216Z"></path></g></g><g data-mml-node="mi" transform="translate(1133.2,-686)"><path data-c="1D70E" d="M184 -11Q116 -11 74 34T31 147Q31 247 104 333T274 430Q275 431 414 431H552Q553 430 555 429T559 427T562 425T565 422T567 420T569 416T570 412T571 407T572 401Q572 357 507 357Q500 357 490 357T476 358H416L421 348Q439 310 439 263Q439 153 359 71T184 -11ZM361 278Q361 358 276 358Q152 358 115 184Q114 180 114 178Q106 141 106 117Q106 67 131 47T188 26Q242 26 287 73Q316 103 334 153T356 233T361 278Z"></path></g><rect width="2597.4" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></p><ul>
+<li>x：原始數值</li>
+<li>μ：這一欄資料的「平均值」</li>
+<li>σ：這一欄資料的「標準差」</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> StandardScaler
+std = StandardScaler()
+arr = std.fit_transform(df)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="55" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC%E6%AD%A3%E8%A6%8F%E5%8C%96min-max-normalization">最大最小值正規化（Min-Max Normalization）</h3>
+<ul>
+<li>優點：結果直觀，所有數據會在同一個範圍內（0 到 1），便於比較。</li>
+<li>缺點：
+<ul>
+<li>對極端值非常敏感：極大或極小值會壓縮其他資料的範圍，使結果失真。</li>
+<li>對資料分佈無考慮：只是線性轉換，不會調整偏態分佈的問題。</li>
+<li>新資料要重新計算 min/max：若加入新資料，整體轉換比例需重新調整。</li>
+</ul>
+</li>
+<li>適合：需明確範圍的演算法，如神經網路（尤其是使用 sigmoid/tanh activation）。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="56" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC%E6%AD%A3%E8%A6%8F%E5%8C%96min-max-normalization-1">最大最小值正規化（Min-Max Normalization）</h3>
+<p><mjx-container class="MathJax" jax="SVG" display="true" style="margin: 0;"><svg style="vertical-align: -1.909ex; display: block; width: 100%; height: auto; max-height: 4.757ex;" xmlns="http://www.w3.org/2000/svg" width="17.308ex" height="4.757ex" role="img" focusable="false" viewBox="0 -1259 7650.1 2102.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(605,413) scale(0.707)"><path data-c="2032" d="M79 43Q73 43 52 49T30 61Q30 68 85 293T146 528Q161 560 198 560Q218 560 240 545T262 501Q262 496 260 486Q259 479 173 263T84 45T79 43Z"></path></g></g><g data-mml-node="mo" transform="translate(1127.2,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(2183,0)"><g data-mml-node="mrow" transform="translate(919.5,676)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(794.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="msub" transform="translate(1794.4,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="TeXAtom" transform="translate(605,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><path data-c="6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(833,0)"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(1111,0)"></path></g></g></g></g><g data-mml-node="mrow" transform="translate(220,-686)"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="TeXAtom" transform="translate(605,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><path data-c="6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" transform="translate(833,0)"></path><path data-c="78" d="M201 0Q189 3 102 3Q26 3 17 0H11V46H25Q48 47 67 52T96 61T121 78T139 96T160 122T180 150L226 210L168 288Q159 301 149 315T133 336T122 351T113 363T107 370T100 376T94 379T88 381T80 383Q74 383 44 385H16V431H23Q59 429 126 429Q219 429 229 431H237V385Q201 381 201 369Q201 367 211 353T239 315T268 274L272 270L297 304Q329 345 329 358Q329 364 327 369T322 376T317 380T310 384L307 385H302V431H309Q324 428 408 428Q487 428 493 431H499V385H492Q443 385 411 368Q394 360 377 341T312 257L296 236L358 151Q424 61 429 57T446 50Q464 46 499 46H516V0H510H502Q494 1 482 1T457 2T432 2T414 3Q403 3 377 3T327 1L304 0H295V46H298Q309 46 320 51T331 63Q331 65 291 120L250 175Q249 174 219 133T185 88Q181 83 181 74Q181 63 188 55T206 46Q208 46 208 23V0H201Z" transform="translate(1333,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(2193.1,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="msub" transform="translate(3193.4,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="TeXAtom" transform="translate(605,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><path data-c="6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(833,0)"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(1111,0)"></path></g></g></g></g><rect width="5227.1" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></p><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> MinMaxScaler
+mms = MinMaxScaler()
+arr = mms.fit_transform(df)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="57" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-01-%E6%B1%BD%E8%BB%8A%E8%BB%8A%E5%9E%8B%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9B">EX04-01 汽車車型數值資料轉換</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">!wget -O car_models.csv https://raw.githubusercontent.com/imchihchao/aop113b/main/materials/04-car_models.csv
+</code></pre>
+<ul>
+<li>將上述汽車車型資料進行數值資料轉換：
+<ul>
+<li>Z 分數標準化</li>
+<li>最大最小值正規化</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="58" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9B">非數值資料轉換</h3>
+<ul>
+<li>機器學習的演算法本質上是一種數學模型，需要使用「數值」資料進行運算。</li>
+<li>但蒐集的資料集，多會有「文字類型」的類別型資料，例如性別（男/女）、學歷（高中/大學/研究所）。必須將這些資料轉換成數字格式，才能進行運算與訓練。</li>
+<li>常見的轉換方式：
+<ul>
+<li>Label Encoding</li>
+<li>One-Hot Encoding</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="59" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="59" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Blabel-encoding">非數值資料轉換：Label Encoding</h3>
+<ul>
+<li>把每個類別用一個數字表示，例如：
+<ul>
+<li>男 → 0，女 → 1</li>
+<li>高中 → 0，大學 → 1，研究所 → 2</li>
+</ul>
+</li>
+<li>優點：簡單快速，節省空間</li>
+<li>缺點：數值之間可能會被誤認為有大小關係</li>
+<li>適合：不在意類別值的大小順序的演算法，如：決策樹、隨機森林、XGBoost</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="60" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Bone-hot-encoding">非數值資料轉換：One-Hot Encoding</h3>
+<ul>
+<li>
+<p>為每個類別創建一個新欄位，只表示「有」或「沒有」，例如：</p>
+<ul>
+<li>性別 → 男：[1, 0]，女：[0, 1]</li>
+<li>城市 → 台北：[1, 0, 0]，台中：[0, 1, 0]，高雄：[0, 0, 1]</li>
+</ul>
+</li>
+<li>
+<p>優點：不會誤導數值大小關係</p>
+</li>
+<li>
+<p>缺點：稀疏矩陣，可能產生大量欄位</p>
+</li>
+<li>
+<p>適合：具數值意義的演算法，如邏輯迴歸、KNN、SVM、神經網路</p>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="61" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Blabel-encoding-1">非數值資料轉換：Label Encoding</h3>
+<ul>
+<li>方法 1：建立字典並使用 map() 對應編碼（不建議）</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 建立字典</span>
+gender = {<span class="hljs-string">&#x27;女&#x27;</span>:<span class="hljs-number">0</span>,<span class="hljs-string">&#x27;男&#x27;</span>:<span class="hljs-number">1</span>}
+<span class="hljs-comment"># 使用 map() 對應編碼</span>
+df[<span class="hljs-string">&#x27;性別&#x27;</span>] = df[<span class="hljs-string">&#x27;性別&#x27;</span>].<span class="hljs-built_in">map</span>(gender)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="62" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Blabel-encoding-2">非數值資料轉換：Label Encoding</h3>
+<ul>
+<li>方法 2：針對特徵值使用 OrdinalEncoder</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> OrdinalEncoder
+<span class="hljs-comment"># 建立 OrdinalEncoder 物件</span>
+encoder = OrdinalEncoder(categories=[[類別<span class="hljs-number">1</span>串列], [類別<span class="hljs-number">2</span>串列]])
+<span class="hljs-comment"># 針對要進行 label encoding 的欄位進行 encoding</span>
+DataFrame欄位 = encoder.fit_transform(DataFrame欄位)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 查詢轉換後數值代表特徵值</span>
+範例:labelname = encoder.categories_
+labelname[<span class="hljs-number">5</span>]
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="63" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Blabel-encoding-3">非數值資料轉換：Label Encoding</h3>
+<ul>
+<li>方法 2：針對標籤值使用 LabelEncoder</li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> LabelEncoder
+<span class="hljs-comment"># 建立 LabelEncoder 物件</span>
+encoder = LabelEncoder()
+<span class="hljs-comment"># 針對要進行 label encoding 的欄位進行 encoding</span>
+DataFrame欄位 = encoder.fit_transform(DataFrame欄位)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 查詢轉換後數值代表特徵值</span>
+範例:labelname = encoder.classes_
+labelname[<span class="hljs-number">5</span>]
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="64" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Bone-hot-encoding-1">非數值資料轉換：One-Hot Encoding</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> OneHotEncoder
+<span class="hljs-comment"># 建立 OneHotEncoder 物件</span>
+encoder = OneHotEncoder(sparse_output=<span class="hljs-literal">False</span>, drop=<span class="hljs-string">&#x27;first&#x27;</span>)
+<span class="hljs-comment"># 使用 fit_transform 直接對多個欄位進行編碼</span>
+encoded_data = encoder.fit_transform(df[columns_to_encode])
+<span class="hljs-comment"># 取得編碼後的欄位名稱</span>
+encoded_columns = encoder.get_feature_names_out(columns_to_encode)
+<span class="hljs-comment"># 建立新的 DataFrame 來儲存編碼後的資料</span>
+encoded_df = pd.DataFrame(encoded_data, columns=encoded_columns)
+<span class="hljs-comment"># 將編碼後的資料與原始資料合併</span>
+df = pd.concat([df, encoded_df], axis=<span class="hljs-number">1</span>)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="65" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-02-%E5%AE%A2%E6%88%B6%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99">EX04-02 客戶基本資料</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">!wget -O customer_contact_status.csv https://raw.githubusercontent.com/imchihchao/aop113b/main/materials/04-dataset_customer_contact_status.csv
+</code></pre>
+<ul>
+<li>請針對資料集中的非數值資料進行編碼：
+<ul>
+<li>將 訂購 使用 LabelEncoder 的方式進行 Label Encoding</li>
+<li>將 學歷 使用 OrdinalEncoder 進行 Label Encofing</li>
+<li>將 工作、婚姻及連絡方式 使用 OneHotEncoder 進行 One-Hot Encoding</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="66" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E5%88%86%E7%BE%A4clustering-1">分群（Clustering）</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="67" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%88%86%E7%BE%A4%E7%9B%AE%E7%9A%84">分群目的</h3>
+<ul>
+<li>解讀各群組資料</li>
+<li>為資料加入標記</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="68" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="k-means-%E6%BC%94%E7%AE%97%E6%B3%95">K-Means 演算法</h3>
+<p>K-means 是一種非監督式學習（unsupervised learning）的分群（clustering）演算法，主要用途是將資料自動分成 K 個群組（clusters），每一筆資料會被分到跟它「最相近」的群組裡。</p>
+<img src="images/04-kmeans.png" width="500" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="69" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="k-means-%E6%BC%94%E7%AE%97%E6%B3%95-1">K-means 演算法</h3>
+<p>K-means 的核心概念是：找出 K 個「中心點（centroids）」，讓每一筆資料都靠近其中一個中心點。具體步驟如下：</p>
+<ul>
+<li>初始化中心點：隨機選出 K 個資料點當作初始的中心點。</li>
+<li>分配資料：對於每一筆資料，計算它與所有中心點的距離，把它分到最近的那一個中心點所屬的群組。</li>
+<li>更新中心點：對每個群組，計算群組中所有資料點的平均值，當作新的中心點。</li>
+<li>重複步驟 2 和 3，直到中心點不再變動（或變動非常小），表示已經收斂。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="70" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="k-means-%E6%BC%94%E7%AE%97%E6%B3%95-2">K-means 演算法</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.cluster <span class="hljs-keyword">import</span> KMeans
+kmeans = KMeans(n_clusters=k)
+kmeans.fit(X)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 為每筆資料加上分群結果</span>
+df[<span class="hljs-string">&#x27;cluster&#x27;</span>] = kmeans.labels_
+df
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="71" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="k-means-%E6%BC%94%E7%AE%97%E6%B3%95-3">K-means 演算法</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 查看各群特質</span>
+df.groupby(<span class="hljs-string">&#x27;cluster&#x27;</span>).mean()
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 評估分群效果</span>
+<span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> calinski_harabasz_score
+score = calinski_harabasz_score(X, kmeans.labels_)
+</code></pre>
+<ul>
+<li>衡量群與群之間是否分得夠開，以及每一群內是否夠緊密</li>
+<li>分數越高，代表分群效果越好</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="72" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-03-%E5%AE%A2%E6%88%B6%E5%88%86%E7%BE%A4">EX04-03 客戶分群</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">!wget -O car_models.csv https://raw.githubusercontent.com/imchihchao/aop113b/main/materials/04-customer.csv
+</code></pre>
+<ul>
+<li>將 性別 欄位 Label Encoding</li>
+<li>將客戶分成 3 群，並解讀各群特質</li>
+<li>計算 k = 2 ~ 15 的 Calinski-Harbasz Score，找出最佳 k 值</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="73" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E5%9B%9E%E6%AD%B8regression">回歸（Regression）</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="74" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="74" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E7%B7%9A%E6%80%A7%E8%BF%B4%E6%AD%B8">梯度下降法線性迴歸</h3>
+<ul>
+<li>SGDRegressor 是一種線性回歸模型，它使用隨機梯度下降法（SGD, Stochastic Gradient Descent）來優化模型的參數。</li>
+<li>SGDRegressor 主要用於處理線性回歸問題，假設資料和目標變數之間存在線性關係。</li>
+<li>學習率 (learning_rate) 和最大迭代次數 (max_iter) 是常見的超參數，會影響模型的收斂速度和效果。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="75" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E7%B7%9A%E6%80%A7%E8%BF%B4%E6%AD%B8-1">梯度下降法線性迴歸</h3>
+<br />
+<img src="images/04-loss_func_3.png" width="550" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="76" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-04-%E5%8A%A0%E5%B7%9E%E6%88%BF%E5%83%B9">EX04-04 加州房價</h3>
+<ul>
+<li>使用 Scikit-Learn 內建的加州房價資料集，以梯度下降法線性迴歸預測加州房價中位數。</li>
+<li>需將數值進行 Z 分數標準化。</li>
+<li>以均方誤差 (MSE)評估模型。</li>
+<li>訓練模型後保存模型及標準化量尺，做為未來預測資料使用。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="77" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A8%A1%E5%9E%8B%E8%A8%93%E7%B7%B4%E6%AD%A5%E9%A9%9F">模型訓練步驟</h3>
+<ol>
+<li>探索性數據分析（EDA, Exploratory Data Analysis）</li>
+<li>資料分割</li>
+<li>數據資料標準化</li>
+<li>訓練模型</li>
+<li>預測與評估模型</li>
+<li>保存模型</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="78" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="78" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%8A%A0%E5%B7%9E%E6%88%BF%E5%83%B9%E8%B3%87%E6%96%99%E9%9B%86california-housing">加州房價資料集（California Housing）</h3>
+<p>此資料集包含了1990年加州的所有普查區域，共20640個實例。</p>
+<img src="images/04-california_housing_features.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="79" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="eda">EDA</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.datasets <span class="hljs-keyword">import</span> fetch_california_housing
+<span class="hljs-comment"># 載入資料集</span>
+california_housing = fetch_california_housing(as_frame=<span class="hljs-literal">True</span>)
+X, y = california_housing.data, california_housing.target
+df = california_housing.frame
+</code></pre>
+<ul>
+<li>df.info(), df.describe(), df.isnull().sum()</li>
+<li>特徵相關矩陣</li>
+<li>地理位置和房價散佈圖</li>
+<li>收入的分佈，房價的分佈</li>
+<li>AveOccup 異常值</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="80" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%88%86%E5%89%B2%E8%B3%87%E6%96%99%E9%9B%86">分割資料集</h3>
+<br />
+<img src="images/04-train_test_1.png" width="775" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="81" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%88%86%E5%89%B2%E8%B3%87%E6%96%99%E9%9B%86-1">分割資料集</h3>
+<br />
+<img src="images/04-train_test_2.png" width="900" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="82" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%88%86%E5%89%B2%E8%B3%87%E6%96%99%E9%9B%86-2">分割資料集</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> train_test_split
+<span class="hljs-comment"># X: features, y: label</span>
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="hljs-number">0.2</span>, random_state=<span class="hljs-number">42</span>)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="83" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A8%99%E6%BA%96%E5%8C%96">標準化</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> StandardScaler
+scaler = StandardScaler()
+train_scaled = scaler.fit_transform(train)
+test_scaled = scaler.transform(test)
+</code></pre>
+<ul>
+<li>注意測試集不能 fit</li>
+<li>StandardScaler() 需傳入二維陣列，使用 reshape(-1,1) 及 ravel() 進行轉換</li>
+<li>使用 inverse_transform() 將標準化後的數據還原回原始數據</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="84" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E7%B7%9A%E6%80%A7%E8%BF%B4%E6%AD%B8-2">梯度下降法線性迴歸</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> SGDRegressor
+sgdr = SGDRegressor()
+sgdr.fit(x_train, y_train)
+y_pred = sgdr.predict(x_test)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 權重值</span>
+sgdr.coef_
+<span class="hljs-comment"># 偏置值</span>
+sgdr.intercept_
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="85" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%A9%95%E4%BC%B0%E6%A8%A1%E5%9E%8B">評估模型</h3>
+<p>使用 MSE 評估模型</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> mean_squared_error, r2_score
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="86" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="86" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BF%9D%E5%AD%98%E6%A8%A1%E5%9E%8B">保存模型</h3>
+<p>使用 joblib 保存及載入訓練好的模型</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> joblib
+
+<span class="hljs-comment"># Save the model</span>
+joblib.dump(sgd, <span class="hljs-string">&#x27;sgd_model.pkl&#x27;</span>)
+
+<span class="hljs-comment"># Load the saved model</span>
+loaded_sgd = joblib.load(<span class="hljs-string">&#x27;sgd_model.pkl&#x27;</span>)
+
+<span class="hljs-comment"># 使用加載的模型進行預測</span>
+pred = loaded_sgd.predict(X)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="87" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="87" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E5%88%86%E9%A1%9Eclassification-1">分類（Classification）</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="88" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="88" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="k-%E8%BF%91%E9%84%B0%E6%BC%94%E7%AE%97%E6%B3%95knn">K 近鄰演算法（KNN）</h3>
+<p>KNN 的核心概念：給定一筆新的資料，KNN 會看這筆資料「最接近的 K 筆訓練資料」，然後根據這 K 筆資料的標籤來決定新資料的分類。步驟如下：</p>
+<ol>
+<li>準備訓練資料（每筆資料都有特徵與標籤）</li>
+<li>給定一筆要分類的新資料點</li>
+<li>計算新資料點與所有訓練資料之間的距離（通常用歐式距離）</li>
+<li>找出距離最近的 K 筆資料</li>
+<li>用這 K 筆資料的標籤「投票」來決定新資料的類別</li>
+</ol>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="89" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="89" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="k-%E8%BF%91%E9%84%B0%E6%BC%94%E7%AE%97%E6%B3%95knn-1">K 近鄰演算法（KNN）</h3>
+<p>歐式距離計算公式：</p>
+<p><mjx-container class="MathJax" jax="SVG" display="true" style="margin: 0;"><svg style="vertical-align: -3.453ex; display: block; width: 100%; height: auto; max-height: 8.281ex;" xmlns="http://www.w3.org/2000/svg" width="24.758ex" height="8.281ex" role="img" focusable="false" viewBox="0 -2133.6 10943.1 3660"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mo" transform="translate(520,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(909,0)"><g data-mml-node="mi"><path data-c="1D431" d="M227 0Q212 3 121 3Q40 3 28 0H21V62H117L245 213L109 382H26V444H34Q49 441 143 441Q247 441 265 444H274V382H246L281 339Q315 297 316 297Q320 297 354 341L389 382H352V444H360Q375 441 466 441Q547 441 559 444H566V382H471L355 246L504 63L545 62H586V0H578Q563 3 469 3Q365 3 347 0H338V62H366Q366 63 326 112T285 163L198 63L217 62H235V0H227Z"></path></g></g><g data-mml-node="mo" transform="translate(1516,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1960.7,0)"><g data-mml-node="mi"><path data-c="1D432" d="M84 -102Q84 -110 87 -119T102 -138T133 -149Q148 -148 162 -143T186 -131T206 -114T222 -95T234 -76T243 -59T249 -45T252 -37L269 0L96 382H26V444H34Q49 441 146 441Q252 441 270 444H279V382H255Q232 382 232 380L337 151L442 382H394V444H401Q413 441 495 441Q568 441 574 444H580V382H510L406 152Q298 -84 297 -87Q269 -139 225 -169T131 -200Q85 -200 54 -172T23 -100Q23 -64 44 -50T87 -35Q111 -35 130 -50T152 -92V-100H84V-102Z"></path></g></g><g data-mml-node="mo" transform="translate(2567.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(3234.4,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msqrt" transform="translate(4290.2,0)"><g transform="translate(1056,0)"><g data-mml-node="munderover"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mo" transform="translate(1444,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(1833,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mi" transform="translate(605,-150) scale(0.707)"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="mo" transform="translate(2954.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="msub" transform="translate(3954.4,0)"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(523,-150) scale(0.707)"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g data-mml-node="msup" transform="translate(4771.3,0)"><g data-mml-node="mo"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mn" transform="translate(422,289) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g><g data-mml-node="mo" transform="translate(0,-476.4)"><path data-c="E001" d="M702 589Q706 601 718 605H1061Q1076 597 1076 585Q1076 572 1061 565H742V0Q734 -14 724 -14H722H720Q708 -14 702 0V589Z" transform="translate(0,1945)"></path><path data-c="23B7" d="M742 -871Q740 -873 737 -876T733 -880T730 -882T724 -884T714 -885H702L222 569L180 484Q138 399 137 399Q131 404 124 412L111 425L265 736L702 -586V168L703 922Q713 935 722 935Q734 935 742 920V-871Z" transform="translate(0,-165)"></path><svg width="1056" height="1361" y="670" x="0" viewBox="0 295.5 1056 1361"><path data-c="E000" d="M722 -14H720Q708 -14 702 0V306L703 612Q713 625 722 625Q734 625 742 610V0Q734 -14 724 -14H722Z" transform="scale(1,3.195)"></path></svg></g><rect width="5596.9" height="60" x="1056" y="2013.6"></rect></g></g></g></svg></mjx-container></p><ul>
+<li>注意：計算歐式距離前,需將資料進行特徵值標準化。</li>
+<li>優點：容易理解，實作簡單，不需訓練過程（訓練速度快）</li>
+<li>缺點：對資料尺度敏感，不適合維度太高的資料，測試階段計算成本高（要對每筆資料計算距離）</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="90" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="90" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-05-%E8%BE%A8%E8%AD%98%E9%B3%B6%E5%B0%BE%E8%8A%B1">EX04-05 辨識鳶尾花</h3>
+<ul>
+<li>使用 Scikit-Learn 內建的鳶尾花資料集，以 K 近鄰演算法辨識鳶尾花。</li>
+<li>進行參數調校</li>
+<li>使用 pipline 序列化保存模型</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="91" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="91" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%B3%B6%E5%B0%BE%E8%8A%B1%E8%B3%87%E6%96%99%E9%9B%86%E8%AA%AA%E6%98%8E">鳶尾花資料集說明</h3>
+<p>鳶尾花資料集最初是埃德加·安德森從加拿大加斯帕半島的鳶尾屬花朵中提取的形態學變異資料，後由羅納德·費雪作為判別分析的一個例子，運用到統計學中。</p>
+<p>其資料集包含了150個樣本，都屬於鳶尾屬下的3個亞屬，分別是山鳶尾（Setosa）、變色鳶尾（Versicolor）和維吉尼亞鳶尾（Virginica）。每個樣本都包含4項特徵，即花萼和花瓣的長度和寬度，它們可用於樣本的定量分析。基於這些特徵，費雪發展了能夠確定其屬種的線性判別分析。</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="92" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="92" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%B3%B6%E5%B0%BE%E8%8A%B1%E8%B3%87%E6%96%99%E9%9B%86%E6%AC%84%E4%BD%8D%E8%AA%AA%E6%98%8E">鳶尾花資料集欄位說明</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>樣本數（rows）</td>
+<td>150 筆</td>
+</tr>
+<tr>
+<td>特徵數（features）</td>
+<td>4 個連續變數</td>
+</tr>
+<tr>
+<td>類別數（target classes）</td>
+<td>3 類（品種）</td>
+</tr>
+<tr>
+<td>任務型別</td>
+<td>多類別分類</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="93" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="93" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%BC%89%E5%85%A5%E8%B3%87%E6%96%99">載入資料</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.datasets <span class="hljs-keyword">import</span> load_iris
+iris = load_iris(as_frame=<span class="hljs-literal">True</span>)
+
+X = iris.data       <span class="hljs-comment"># 特徵 (pandas DataFrame)</span>
+y = iris.target     <span class="hljs-comment"># 類別 (Series)</span>
+feature_names = iris.feature_names
+target_names = iris.target_names
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="94" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="94" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%A8%93%E7%B7%B4%E6%A8%A1%E5%9E%8B">訓練模型</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.neighbors <span class="hljs-keyword">import</span> KNeighborsClassifier
+
+knn = KNeighborsClassifier(n_neighbors=<span class="hljs-number">5</span>)
+<span class="hljs-comment"># 調整 n_neighbors 參數，其他參數如 weights, algorithm...</span>
+knn.fit(X_train, y_train)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 模型訓練集得分</span>
+knn.score(X_train, y_train)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="95" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="95" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%99%A3confusion-matrix">混淆矩陣（Confusion Matrix）</h3>
+<ul>
+<li>混淆矩陣(Confusion Matrix)是機器學習中評估模型預測性能的一種重要工具，特別是對於分類問題。</li>
+</ul>
+<img src="images/04-confusion_1.png" width="800" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="96" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="96" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%99%A3confusion-matrix-1">混淆矩陣（Confusion Matrix）</h3>
+<ul>
+<li>準確率(Accuracy)<br />
+Accuracy = (TP + TN) / (TP + FP + TN + FN)</li>
+</ul>
+<img src="images/04-confusion_2.png" width="800" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="97" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="97" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%99%A3confusion-matrix-2">混淆矩陣（Confusion Matrix）</h3>
+<ul>
+<li>精確率(Precision)<br />
+Precision = TP / (TP + FP)</li>
+</ul>
+<img src="images/04-confusion_3.png" width="800" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="98" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="98" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%99%A3confusion-matrix-3">混淆矩陣（Confusion Matrix）</h3>
+<ul>
+<li>召回率(Recall)<br />
+Recall = TP / (TP + FN)</li>
+</ul>
+<img src="images/04-confusion_4.png" width="800" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="99" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="99" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E9%A0%90%E6%B8%AC%E8%88%87%E8%A9%95%E4%BC%B0%E6%A8%A1%E5%9E%8B">預測與評估模型</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> accuracy_score, classification_report
+
+y_pred = knn.predict(x_test)
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;準確率：&quot;</span>, accuracy_score(y_test, y_pred))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;分類報告：\n&quot;</span>, classification_report(y_test, y_pred))
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="100" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="100" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%8F%83%E6%95%B8%E8%AA%BF%E6%A0%A1">參數調校</h3>
+<p>在機器學習中，有兩種類型的參數：</p>
+<ul>
+<li>模型參數（Model Parameters）：由訓練資料自動學得的，例如線性迴歸中的權重。</li>
+<li>超參數（Hyperparameters）：訓練前人工設定的參數，例如決策樹的最大深度、KNN 的 k 值等。</li>
+</ul>
+<p>參數調校的目的就是找出一組「最佳超參數」，讓模型在未見過的資料上有最好的表現。Scikit-Learn 提供「交叉驗證（Cross-Validation）」、「網格搜索（Grid Search）」來協助參數調校。</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="101" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="101" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%BA%A4%E5%8F%89%E9%A9%97%E8%AD%89cross-validation">交叉驗證（Cross-Validation）</h3>
+<p>交叉驗證是一種模型評估方法，用來減少模型在訓練資料上過擬合（Overfitting）或評估不準的問題。最常見的是 k-fold cross-validation：</p>
+<img src="images/04-cross_validation.png" width="1000" />
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="102" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="102" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E7%B6%B2%E6%A0%BC%E6%90%9C%E7%B4%A2grid-search">網格搜索（Grid Search）</h3>
+<p>網格搜索是一種常見的自動化超參數調校方法。做法如下：</p>
+<ul>
+<li>列出要調整的超參數與候選值，例如：knn_n_neighbors: [3,5,7], knn_weights: [&quot;uniform&quot;, &quot;distance&quot;]</li>
+<li>建立所有可能的組合，並對每一組組合使用<strong>交叉驗證</strong>，計算模型效能</li>
+<li>選擇效能最好的組合作為「最佳超參數組合」</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="103" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="103" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E7%B6%B2%E6%A0%BC%E6%90%9C%E7%B4%A2grid-search-1">網格搜索（Grid Search）</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> GridSearchCV
+param_grid = {P1:[V1,V2,...], P2:[V1,V2,...], ...}
+grid = GridSearchCV(model_obj, param_grid=param_grid, cv=<span class="hljs-number">5</span>)
+grid.fit(X_train, y_train)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">grid.best_score_     <span class="hljs-comment"># 交叉驗證中最佳準確率</span>
+grid.best_params_    <span class="hljs-comment"># 最佳參數組合</span>
+grid.cv_results_     <span class="hljs-comment"># 每次交叉驗證準確率</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="104" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="104" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="pipeline">Pipeline</h3>
+<p>Pipeline 是 scikit-learn 中非常重要的一個工具，它可以把資料前處理（如標準化、PCA）與模型訓練串接成一個整體流程，讓你更有效率、更安全地進行機器學習，尤其是在交叉驗證與超參數調整（如 GridSearchCV）中非常實用。</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.pipeline <span class="hljs-keyword">import</span> Pipeline
+
+pipeline = Pipeline([
+    (<span class="hljs-string">&quot;scaler&quot;</span>, StandardScaler()),         <span class="hljs-comment"># 第一步：Z-score 標準化</span>
+    (<span class="hljs-string">&quot;knn&quot;</span>, KNeighborsClassifier(n_neighbors=<span class="hljs-number">5</span>))  <span class="hljs-comment"># 第二步：KNN 模型</span>
+])
+<span class="hljs-comment"># 使用 pipeline 訓練並預測</span>
+pipeline.fit(X_train, y_train)
+y_pred  = pipeline.predict(X_test)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="105" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="105" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="pipeline-%E5%84%B2%E5%AD%98%E6%A8%A1%E5%9E%8B">Pipeline 儲存模型</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 儲存模型</span>
+joblib.dump(pipeline, <span class="hljs-string">&quot;pipeline.joblib&quot;</span>)
+
+<span class="hljs-comment"># 載入模型</span>
+loaded_model = joblib.load(<span class="hljs-string">&quot;pipeline.joblib&quot;</span>)
+
+<span class="hljs-comment"># 預測</span>
+new_data = pd.DataFrame(data_numpy_array, columns=data.feature_names)
+pred = loaded_model.predict(new_data)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;預測結果：&quot;</span>, data.target_names[pred[<span class="hljs-number">0</span>]])
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="106" data-paginate="true" data-class="lead" data-theme="gaia" lang="zh-TW" class="lead" data-marpit-pagination="106" style="--paginate:true;--class:lead;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h2 id="%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80%E8%99%95%E7%90%86brnatural-language-processing-nlp">自然語言處理<br />（Natural Language Processing, NLP）</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="107" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="107" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="nlp-%E5%B8%B8%E8%A6%8B%E7%9A%84%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E5%8F%8A%E6%87%89%E7%94%A8">NLP 常見的分析方法及應用</h3>
+<ul>
+<li><strong>詞頻分析</strong>：計算各詞在新聞標題中出現的次數，用來識別熱門話題或建立文字雲。</li>
+<li><strong>分類分析</strong>：將標題自動歸類到不同主題（如政治、科技等），便於組織與統計。</li>
+<li><strong>情感分析</strong>：判斷每則標題的情緒傾向，如正面、負面或中立，了解新聞風向。</li>
+<li><strong>關鍵詞提取</strong>：擷取每則標題中的關鍵詞，找出代表性語彙以輔助理解主題。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="108" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="108" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="nlp-%E5%B8%B8%E8%A6%8B%E7%9A%84%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E5%8F%8A%E6%87%89%E7%94%A8-1">NLP 常見的分析方法及應用</h3>
+<ul>
+<li><strong>主題建模</strong>：探索大量標題中隱含的主題結構，發現潛在議題群組。</li>
+<li><strong>時間序列分析</strong>：觀察標題內容隨時間的變化趨勢，找出熱門事件與高峰期。</li>
+<li><strong>地理分析</strong>：提取標題中的地名，分析新聞在不同地區的分佈情況。</li>
+<li><strong>網絡關係分析</strong>：分析人物與事件間的關係，建立可視化的社會或事件互動網絡。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="109" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="109" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%8B%B1%E6%96%87%E6%96%87%E5%8F%A5%E7%89%B9%E5%BE%B5%E8%99%95%E7%90%86---%E6%96%87%E5%8F%A5%E5%90%91%E9%87%8F%E5%8C%96%E8%A9%9E%E8%A2%8B">英文文句特徵處理 - 文句向量化（詞袋）</h3>
+<p>將文字轉換為詞袋（Bag-of-Words）模型，即統計每個詞出現的次數。</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.feature_extraction.text <span class="hljs-keyword">import</span> CountVectorizer
+texts = [<span class="hljs-string">&quot;I love programming.&quot;</span>, <span class="hljs-string">&quot;Programming is fun.&quot;</span>]
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(texts)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-built_in">print</span>(X.toarray()) <span class="hljs-comment"># 文句單詞次數統計。</span>
+<span class="hljs-built_in">print</span>(vectorizer.get_feature_names_out()) <span class="hljs-comment"># 文句單詞。</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="110" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="110" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E8%8B%B1%E6%96%87%E6%96%87%E5%8F%A5%E7%89%B9%E5%BE%B5%E8%99%95%E7%90%86---%E6%96%87%E5%8F%A5%E5%90%91%E9%87%8F%E5%8C%96tf-idf">英文文句特徵處理 - 文句向量化（TF-IDF）</h3>
+<p>TF-IDF 是 Term Frequency-Inverse Document Frequency 的縮寫，中文叫做「單詞頻率–逆文檔頻率」。它是一種衡量「一個詞對一份文件的重要性」的統計方法。（單一字母不列為詞）</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.feature_extraction.text <span class="hljs-keyword">import</span> TfidfVectorizer
+texts = [<span class="hljs-string">&quot;I love programming.&quot;</span>, <span class="hljs-string">&quot;Programming is fun.&quot;</span>]
+vectorizer = TfidfVectorizer()
+X = vectorizer.fit_transform(texts)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-built_in">print</span>(X.toarray()) <span class="hljs-comment"># 文句單詞權重。</span>
+<span class="hljs-built_in">print</span>(vectorizer.get_feature_names_out()) <span class="hljs-comment"># 文句單詞。</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="111" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="111" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E4%B8%AD%E6%96%87%E6%96%B7%E5%8F%A5%E8%99%95%E7%90%86">中文斷句處理</h3>
+<p>當我們處理中文文本時，<strong>中文斷詞</strong>是最重要的預處理步驟之一，因為中文不像英文那樣用空格區分單字。</p>
+<table>
+<thead>
+<tr>
+<th>工具名稱</th>
+<th>適用語言</th>
+<th>優點</th>
+<th>缺點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CKIP</strong></td>
+<td>繁體中文</td>
+<td>高準確度、適合專有名詞、人名、地名辨識</td>
+<td>執行較慢、安裝與使用較複雜</td>
+</tr>
+<tr>
+<td><strong>Jieba</strong></td>
+<td>簡中／繁中</td>
+<td>輕量快速、易安裝、支援自定義詞庫</td>
+<td>分詞準確度略低、對專有名詞辨識較差</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="112" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="112" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="jieba">Jieba</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> jieba
+<span class="hljs-built_in">list</span>(jieba.cut(<span class="hljs-string">&#x27;太多的巧合就是有緣。&#x27;</span>))
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># 加入繁體中文字典</span>
+jieba.set_dictionary(<span class="hljs-string">&#x27;dict.txt.big&#x27;</span>)
+<span class="hljs-comment"># 個別想加入的詞，可以串列加入</span>
+words = []
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">jieba_add_word</span>(<span class="hljs-params">words</span>):
+    <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> words:
+        jieba.add_word(word, freq=<span class="hljs-number">10000</span>)
+        jieba.suggest_freq(word, tune=<span class="hljs-literal">True</span>)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="113" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="113" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="jieba-%E9%81%8E%E6%BF%BE%E5%81%9C%E7%94%A8%E8%A9%9E">Jieba 過濾停用詞</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> jieba
+
+<span class="hljs-comment"># 1. 載入停用詞表</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">load_stopwords</span>(<span class="hljs-params">filepath</span>):
+    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(filepath, <span class="hljs-string">&#x27;r&#x27;</span>, encoding=<span class="hljs-string">&#x27;utf-8&#x27;</span>) <span class="hljs-keyword">as</span> f:
+        stopwords = <span class="hljs-built_in">set</span>(line.strip() <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f <span class="hljs-keyword">if</span> line.strip())
+    <span class="hljs-keyword">return</span> stopwords
+
+<span class="hljs-comment"># 2. 分詞並過濾停用詞</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">jieba_cut_with_stopwords</span>(<span class="hljs-params">text, stopwords</span>):
+    words = jieba.cut(text)
+    <span class="hljs-keyword">return</span> [word <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> words <span class="hljs-keyword">if</span> word <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> stopwords <span class="hljs-keyword">and</span> word.strip() != <span class="hljs-string">&#x27;&#x27;</span>]
+
+<span class="hljs-comment"># 測試範例</span>
+text = <span class="hljs-string">&quot;我喜歡在台灣大學研究人工智慧與自然語言處理。&quot;</span>
+stopwords = load_stopwords(<span class="hljs-string">&quot;stopwords.txt&quot;</span>)
+filtered_words = jieba_cut_with_stopwords(text, stopwords)
+
+<span class="hljs-built_in">print</span>(filtered_words)
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> jieba
+saying = [<span class="hljs-string">&quot;努力也是一種天賦。&quot;</span>,<span class="hljs-string">&quot;太多的巧合就是有緣。&quot;</span>]
+saying = [ <span class="hljs-string">&#x27; &#x27;</span>.join(<span class="hljs-built_in">list</span>(jieba.cut(s))) <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> saying ]
+saying
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="114" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="114" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E5%96%AE%E7%B4%94%E8%B2%9D%E6%B0%8F%E6%BC%94%E7%AE%97%E6%B3%95naive-bayes">單純貝氏演算法（Naive Bayes）</h3>
+<p>單純貝氏分類器是一種機率型分類演算法，基於貝氏定理（Bayes Theorem），假設特徵之間是條件獨立的。這個演算法經常應用在<strong>文字分類（如垃圾郵件偵測、情感分析、新聞分類）</strong>。</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.naive_bayes <span class="hljs-keyword">import</span> MultinomialNB
+mnb = MultinomialNB(alpha=<span class="hljs-number">1.0</span>) <span class="hljs-comment"># alpha 就是設定如果該詞不存在時，因貝氐運算是採用乘法，所以用 1</span>
+mnb.fit(X_train_tiv, y_train)
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="115" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="115" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-06-et-today-%E6%96%B0%E8%81%9E%E6%A8%99%E9%A1%8C%E5%88%86%E9%A1%9E">EX04-06 ET Today 新聞標題分類</h3>
+<ul>
+<li>爬取過去一年 ET Today 的新聞標題做為資料集。</li>
+<li>使用 Jieba 進行斷詞。</li>
+<li>使用單純貝氏演算法進行新聞標題分類。</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="116" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="116" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="ex04-07-ptt-%E9%9B%BB%E5%BD%B1%E7%89%88%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90">EX04-07 PTT 電影版情感分析</h3>
+<ul>
+<li>爬取 PTT 電影版 5 頁的討論標題及內容，應用 Gemini 進行情感分析。</li>
+<li>針對每一篇討論判斷風向（正面、負面、中性）</li>
+<li>統合所有討論的進行整體風向判斷</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="117" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="117" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
+<h3 id="%E6%8F%90%E7%A4%BA%E8%A9%9E">提示詞</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-string">f&#x27;&#x27;&#x27;
+請你扮演一位具有語意分析能力的文字分析師，針對以下社交媒體上關於電影的討論內容，進行整體風向的判斷。請依據文字內容判定觀點為正面、負面或中性，並簡要說明你做出此判斷的依據。
+
+請用 JSON 格式 回覆，包含以下三個欄位：
+1.&quot;movie&quot;：電影名稱（若無明確指出，請填入 &quot;unknown&quot;）
+2.&quot;sentiment&quot;：整體風向（&quot;positive&quot;、&quot;negative&quot; 或 &quot;neutral&quot;）
+3.&quot;reasoning&quot;：你根據哪些內容判斷出該風向，簡要說明理由
+
+以下是需要分析的討論內容：
+<span class="hljs-subst">{row}</span>
+&#x27;&#x27;&#x27;</span>
+</code></pre>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-string">f&#x27;&#x27;&#x27;
+請你針對以下社群留言內容進行分析，完成以下任務：
+
+1.摘要出留言的主要重點，找出大家關注的核心議題或觀點。
+2.辨識並補充每個重點中表現出來的情緒（如正面、負面或中性，以及具體的情緒如憤怒、喜悅、失望等）。
+3.綜合分析留言中最多人表現出的主情緒及其對應的討論內容，並說明整體發文風向（例如：偏正面、偏負面或中立），以及你做出此判斷的理由。
+
+請用條列方式呈現分析結果，結尾請明確指出整體風向。以下是留言內容：
+<span class="hljs-subst">{df.to_string()}</span>
+&#x27;&#x27;&#x27;</span>
+</code></pre>
+</section>
+<script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()}))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame((()=>{t.style.display=""})))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=Symbol();let l;const c="marpitSVGPolyfill:setZoomFactor,",d=Symbol(),h=Symbol();const g=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[u]:[],i={then:e=>(t?(async()=>{if(void 0===l){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise((t=>{i.addEventListener("load",(()=>t()))}));i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),l=e.getImageData(5,5,1,1).data[3]<128}return l})().then((t=>{null==e||e(t?[u]:[])})):null==e||e([]),i)};return Object.assign(e,i)};let p,m;function u(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[h]||(Object.defineProperty(window,h,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(c)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(m=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||m||t.currentScale||1;p!==a&&(p=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${c}${n}`,"null"===window.origin?"*":window.origin)}))}function v({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[d])return t[d];let e=!0;const i=()=>{e=!1,delete t[d]};Object.defineProperty(t,d,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await g()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}p=1,m=void 0;const w=Symbol(),b=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,a=t[n].proto();(o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o))&&a!==HTMLElement?i||customElements.define(s,r(a,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)})))}window[a]=!0})(e),e[w])return e[w];const i=v({target:e}),n=()=>{i(),delete e[w]},l=Object.assign(n,{cleanup:n,update:()=>b(e)});return Object.defineProperty(e,w,{configurable:!0,value:l}),l},y=document.currentScript;b(y?y.getRootNode():document)}();
+</script></foreignObject></svg></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@4.1.2/lib/bespoke.js.LICENSE.txt */
+!function(){"use strict";function e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var t,n,r=(n||(n=1,t={from:function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),o=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),a={},i=function(e,t){return(t=t||{}).index=o.indexOf(e),t.slide=e,t},s=function(e,t){a[e]=(a[e]||[]).filter((function(e){return e!==t}))},c=function(e,t){return(a[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},l=function(e,t){o[e]&&(n&&c("deactivate",i(n,t)),n=o[e],c("activate",i(n,t)))},d=function(e,t){var r=o.indexOf(n)+e;c(e>0?"next":"prev",i(n,t))&&l(r,t)},u={off:s,on:function(e,t){return(a[e]||(a[e]=[])).push(t),s.bind(null,e,t)},fire:c,slide:function(e,t){if(!arguments.length)return o.indexOf(n);c("slide",i(o[e],t))&&l(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:o,destroy:function(e){c("destroy",i(n,e)),a={}}};return(t||[]).forEach((function(e){e(u)})),n||l(0),u}}),t),o=e(r);const a=document.body,i=(...e)=>history.replaceState(...e),s="",c="presenter",l="next",d=["",c,l],u="bespoke-marp-",f=`data-${u}`,m=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${o}`},g=()=>a.dataset.bespokeView,p=e=>new URLSearchParams(location.search).get(e),v=(e,t={})=>{const n={location,setter:i,...t},r=new URLSearchParams(n.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?r.set(t,n):r.delete(t)}try{n.setter({...window.history.state??{}},"",m(r,n.location))}catch(e){console.error(e)}},h=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch{return!1}})(),y=e=>{try{return localStorage.getItem(e)}catch{return null}},b=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch{return!1}},w=e=>{try{return localStorage.removeItem(e),!0}catch{return!1}},x=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},k=e=>{e.parent.classList.add(`${u}parent`),e.slides.forEach((e=>e.classList.add(`${u}slide`))),e.on("activate",(t=>{const n=`${u}active`,r=t.slide,o=r.classList,a=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),x(e,!0)})),o.add(n),x(r,!1),a){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},$=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const a=t<r||t===r&&n<=o;e.setAttribute(`${f}fragment`,(a?"":"in")+"active");const i=`${f}current-fragment`;t===r&&n===o?e.setAttribute(i,"current"):e.removeAttribute(i)}))})),e.fragmentIndex=o;const a={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",a)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return o(t,n+1),!1;const a=t+1;e.fragments[a]&&o(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const a=e.fragments[t+1];a&&o(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return o(t,n-1),!1;const i=t-1;e.fragments[i]&&o(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},E=document,L=()=>!(!E.fullscreenEnabled&&!E.webkitFullscreenEnabled),S=()=>!(!E.fullscreenElement&&!E.webkitFullscreenElement),P=e=>{e.fullscreen=()=>{L()&&(async()=>{S()?(E.exitFullscreen||E.webkitExitFullscreen)?.call(E):((e=E.body)=>{(e.requestFullscreen||e.webkitRequestFullscreen)?.call(e)})()})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!L()||(e.fullscreen(),t.preventDefault())}))},_=`${u}inactive`,T=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let a;const i=()=>{a&&clearTimeout(a),a=setTimeout((()=>{r.add(_),o()}),e),r.contains(_)&&(r.remove(_),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,i);setTimeout(i,0)},I=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],M=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(I.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},O=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("marp-auto-scaling, [data-auto-scaling], [data-marp-fitting]");t.setAttribute(`${f}load`,e?"":"hideable")}}))},A=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const s=(e,t)=>{e&&(i=i||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),e?.parentElement&&s(e.parentElement,t)};if(0!==a.deltaX&&s(a.target,"X"),0!==a.deltaY&&s(a.target,"Y"),i)return;a.preventDefault();const c=Math.sqrt(a.deltaX**2+a.deltaY**2);if(void 0!==a.wheelDelta){if(void 0===a.webkitForce&&Math.abs(a.wheelDelta)<40)return;if(a.deltaMode===a.DOM_DELTA_PIXEL&&c<4)return}else if(a.deltaMode===a.DOM_DELTA_PIXEL&&c<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const l=Date.now()-o<e,d=c<=n;if(n=c,l||d)return;let u;(a.deltaX>0||a.deltaY>0)&&(u="next"),(a.deltaX<0||a.deltaY<0)&&(u="prev"),u&&(t[u](),o=Date.now())}))},C=(e=`.${u}osc`)=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${f}osc=${JSON.stringify(e)}]`).forEach(n)};return L()||n("fullscreen",(e=>e.style.display="none")),h||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?e?.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>x(t,!1))),e.on("marp-inactive",(()=>x(t,!0))),L()&&(e=>{for(const t of["","webkit"])E.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",L()&&S())))))}},D=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[o].length&&(o+=1,a=0),e.slide(o,{fragment:a})}}))};var N,B,q,K,j,F,V,U={exports:{}},X=(N||(N=1,U.exports=(B=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"],q=function(e){return String(e).replace(/[&<>"']/g,(function(e){return"&"+K[e]+";"}))},K={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},j="dangerouslySetInnerHTML",F={className:"class",htmlFor:"for"},V={},function(e,t){var n=[],r="";t=t||{};for(var o=arguments.length;o-- >2;)n.push(arguments[o]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(var a in t)!1!==t[a]&&null!=t[a]&&a!==j&&(r+=" "+(F[a]?F[a]:q(a))+'="'+q(t[a])+'"');r+=">"}if(-1===B.indexOf(e)){if(t[j])r+=t[j].__html;else for(;n.length;){var i=n.pop();if(i)if(i.pop)for(var s=i.length;s--;)n.push(i[s]);else r+=!0===V[i]?i:q(i)}r+=e?"</"+e+">":""}return V[r]=!0,r})),U.exports),H=e(X);const R=({children:e})=>H(null,null,...e),W=`${u}presenter-`,J={container:`${W}container`,dragbar:`${W}dragbar-container`,next:`${W}next`,nextContainer:`${W}next-container`,noteContainer:`${W}note-container`,noteWrapper:`${W}note-wrapper`,noteButtons:`${W}note-buttons`,infoContainer:`${W}info-container`,infoPage:`${W}info-page`,infoPageText:`${W}info-page-text`,infoPagePrev:`${W}info-page-prev`,infoPageNext:`${W}info-page-next`,noteButtonsBigger:`${W}note-bigger`,noteButtonsSmaller:`${W}note-smaller`,infoTime:`${W}info-time`,infoTimer:`${W}info-timer`},Y=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=J.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",H(R,null,H("div",{class:J.nextContainer},H("iframe",{class:J.next,src:"?view=next"})),H("div",{class:J.dragbar}),H("div",{class:J.noteContainer},H("div",{class:J.noteWrapper}),H("div",{class:J.noteButtons},H("button",{class:J.noteButtonsSmaller,tabindex:"-1",title:"Smaller notes font size"},"Smaller notes font size"),H("button",{class:J.noteButtonsBigger,tabindex:"-1",title:"Bigger notes font size"},"Bigger notes font size"))),H("div",{class:J.infoContainer},H("div",{class:J.infoPage},H("button",{class:J.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),H("span",{class:J.infoPageText}),H("button",{class:J.infoPageNext,tabindex:"-1",title:"Next"},"Next")),H("time",{class:J.infoTime,title:"Current time"}),H("time",{class:J.infoTimer,title:"Timer"})))),t})(e.parent)),(e=>{let t=!1;r(J.dragbar).addEventListener("mousedown",(()=>{t=!0,r(J.dragbar).classList.add("active")})),window.addEventListener("mouseup",(()=>{t=!1,r(J.dragbar).classList.remove("active")})),window.addEventListener("mousemove",(e=>{if(!t)return;const n=e.clientX/document.documentElement.clientWidth*100;r(J.container).style.setProperty("--bespoke-marp-presenter-split-ratio",`${Math.max(0,Math.min(100,n))}%`)})),r(J.nextContainer).addEventListener("click",(()=>e.next()));const n=r(J.next),o=(a=n,(e,t)=>a.contentWindow?.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin));var a;n.addEventListener("load",(()=>{r(J.nextContainer).classList.add("active"),o(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>o(e,t)))}));const i=document.querySelectorAll(".bespoke-marp-note");i.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(J.noteWrapper).appendChild(e)})),e.on("activate",(()=>i.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide())))));let s=0;const c=e=>{s=Math.max(-5,s+e),r(J.noteContainer).style.setProperty("--bespoke-marp-note-font-scale",(1.2**s).toFixed(4))},l=()=>c(1),d=()=>c(-1),u=r(J.noteButtonsBigger),f=r(J.noteButtonsSmaller);u.addEventListener("click",(()=>{u.blur(),l()})),f.addEventListener("click",(()=>{f.blur(),d()})),document.addEventListener("keydown",(e=>{"+"===e.key&&l(),"-"===e.key&&d()}),!0),e.on("activate",(({index:t})=>{r(J.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const m=r(J.infoPagePrev),g=r(J.infoPageNext);m.addEventListener("click",(t=>{m.blur(),e.prev({fragment:!t.shiftKey})})),g.addEventListener("click",(t=>{g.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{m.disabled=0===t&&0===r,g.disabled=t===e.slides.length-1&&r===n.length-1}));let p=new Date;const v=()=>{const e=new Date,t=e=>`${Math.floor(e)}`.padStart(2,"0"),n=e.getTime()-p.getTime(),o=t(n/1e3%60),a=t(n/1e3/60%60),i=t(n/36e5%24);r(J.infoTime).textContent=e.toLocaleTimeString(),r(J.infoTimer).textContent=`${i}:${a}:${o}`};v(),setInterval(v,250),r(J.infoTimer).addEventListener("click",(()=>{p=new Date}))})(e)},z=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:G},presenterUrl:{enumerable:!0,get:Q}}),h&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function G(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,W+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function Q(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),m(e)}const Z=e=>{const t=g();return t===l&&e.appendChild(document.createElement("span")),{[s]:z,[c]:Y,[l]:D}[t]},ee=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},te=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},ne=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{let n=t.fragment?te(p("f")||""):null;((t,n)=>{const{min:r,max:o}=Math,{fragments:a,slides:i}=e,s=o(0,r(t,i.length-1)),c=o(0,r(n||0,a[s].length-1));s===e.slide()&&c===e.fragmentIndex||e.slide(s,{fragment:c})})((()=>{if(location.hash){const[t]=location.hash.slice(1).split(":~:");if(/^\d+$/.test(t))return(te(t)??1)-1;const r=document.getElementById(t)||document.querySelector(`a[name="${CSS.escape(t)}"]`);if(r){const{length:t}=e.slides;for(let o=0;o<t;o+=1)if(e.slides[o].contains(r)){const t=e.fragments?.[o],a=r.closest("[data-marpit-fragment]");if(t&&a){const e=t.indexOf(a);e>=0&&(n=e)}return o}}}return 0})(),n)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||v({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),v({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},re=(e={})=>{const t=e.key||window.history.state?.marpBespokeSyncKey||Math.random().toString(36).slice(2),n=`bespoke-marp-sync-${t}`;var r;r={marpBespokeSyncKey:t},v({},{setter:(e,...t)=>i({...e,...r},...t)});const o=()=>{const e=y(n);return e?JSON.parse(e):Object.create(null)},a=e=>{const t=o(),r={...t,...e(t)};return b(n,JSON.stringify(r)),r},s=()=>{window.removeEventListener("pageshow",s),a((e=>({reference:(e.reference||0)+1})))};return e=>{s(),Object.defineProperty(e,"syncKey",{value:t,enumerable:!0});let r=!0;setTimeout((()=>{e.on("fragment",(e=>{r&&a((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(t=>{if(t.key===n&&t.oldValue&&t.newValue){const n=JSON.parse(t.oldValue),o=JSON.parse(t.newValue);if(n.index!==o.index||n.fragmentIndex!==o.fragmentIndex)try{r=!1,e.slide(o.index,{fragment:o.fragmentIndex,forSync:!0})}finally{r=!0}}}));const i=()=>{const{reference:e}=o();void 0===e||e<=1?w(n):a((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",s),i()})),e.on("destroy",i)}},{PI:oe,abs:ae,sqrt:ie,atan2:se}=Math,ce={passive:!0},le=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,a=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?a(e[0]):void 0}),ce),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=ie(ae(n)**2+ae(o)**2),r.radian=se(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+oe)%(2*oe)-oe;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),ce)},de=new Map;de.clear(),de.set("none",{backward:{both:void 0,incoming:void 0,outgoing:void 0},forward:{both:void 0,incoming:void 0,outgoing:void 0}});const ue={both:"",outgoing:"outgoing-",incoming:"incoming-"},fe={forward:"",backward:"-backward"},me=e=>`--marp-bespoke-transition-animation-${e}`,ge=e=>`--marp-transition-${e}`,pe=me("name"),ve=me("duration"),he=e=>new Promise((t=>{const n={},r=document.createElement("div"),o=e=>{r.remove(),t(e)};r.addEventListener("animationstart",(()=>o(n))),Object.assign(r.style,{animationName:e,animationDuration:"1s",animationFillMode:"both",animationPlayState:"paused",position:"absolute",pointerEvents:"none"}),document.body.appendChild(r);const a=getComputedStyle(r).getPropertyValue(ge("duration"));a&&(n.defaultDuration=a),((e,t)=>{requestAnimationFrame((()=>{e.style.animationPlayState="running",requestAnimationFrame((()=>t(void 0)))}))})(r,o)})),ye=async e=>de.has(e)?de.get(e):(e=>{const t={},n=[];for(const[r,o]of Object.entries(ue))for(const[a,i]of Object.entries(fe)){const s=`marp-${o}transition${i}-${e}`;n.push(he(s).then((e=>{t[a]=t[a]||{},t[a][r]=e?{...e,name:s}:void 0})))}return Promise.all(n).then((()=>t))})(e).then((t=>(de.set(e,t),t))),be=e=>Object.values(e).flatMap(Object.values).every((e=>!e)),we=(e,{type:t,backward:n})=>{const r=e[n?"backward":"forward"],o=(()=>{const e=r[t],n=e=>({[pe]:e.name});if(e)return n(e);if(r.both){const e=n(r.both);return"incoming"===t&&(e[me("direction")]="reverse"),e}})();return!o&&n?we(e,{type:t,backward:!1}):o||{[pe]:"__bespoke_marp_transition_no_animation__"}},xe=e=>{if(e)try{const t=JSON.parse(e);if((e=>{if("object"!=typeof e)return!1;const t=e;return"string"==typeof t.name&&(void 0===t.duration||"string"==typeof t.duration)})(t))return t}catch{}},ke="_tSId",$e="_tA",Ee="bespoke-marp-transition-warming-up",Le=window.matchMedia("(prefers-reduced-motion: reduce)"),Se="__bespoke_marp_transition_reduced_outgoing__",Pe="__bespoke_marp_transition_reduced_incoming__",_e={forward:{both:void 0,incoming:{name:Pe},outgoing:{name:Se}},backward:{both:void 0,incoming:{name:Pe},outgoing:{name:Se}}},Te=e=>{if(!document.startViewTransition)return;const t=t=>(void 0!==t&&(e._tD=t),e._tD);let n;t(!1),((...e)=>{const t=[...new Set(e).values()];return Promise.all(t.map((e=>ye(e)))).then()})(...Array.from(document.querySelectorAll("section[data-transition], section[data-transition-back]")).flatMap((e=>[e.dataset.transition,e.dataset.transitionBack].flatMap((e=>{const t=xe(e);return[t?.name,t?.builtinFallback?`__builtin__${t.name}`:void 0]})).filter((e=>!!e))))).then((()=>{document.querySelectorAll("style").forEach((e=>{e.innerHTML=e.innerHTML.replace(/--marp-transition-duration:[^;}]*[;}]/g,(e=>e.slice(0,-1)+"!important"+e.slice(-1)))}))}));const r=(n,{back:r,cond:o})=>a=>{const i=t();if(i)return!!a[$e]||!("object"!=typeof i||(i.skipTransition(),!a.forSync));if(!o(a))return!0;const s=e.slides[e.slide()],c=()=>a.back??r,l="data-transition"+(c()?"-back":""),d=s.querySelector(`section[${l}]`);if(!d)return!0;const u=xe(d.getAttribute(l)??void 0);return!u||((async(e,{builtinFallback:t=!0}={})=>{let n=await ye(e);if(be(n)){if(!t)return;return n=await ye(`__builtin__${e}`),be(n)?void 0:n}return n})(u.name,{builtinFallback:u.builtinFallback}).then((e=>{if(!e){t(!0);try{n(a)}finally{t(!1)}return}let r=e;Le.matches&&(console.warn("Use a constant animation to transition because preferring reduced motion by viewer has detected."),r=_e);const o=document.getElementById(ke);o&&o.remove();const i=document.createElement("style");i.id=ke,document.head.appendChild(i),((e,t)=>{const n=[`:root{${ge("direction")}:${t.backward?-1:1};}`,":root:has(.bespoke-marp-inactive){cursor:none;}"],r=t=>{const n=e[t].both?.defaultDuration||e[t].outgoing?.defaultDuration||e[t].incoming?.defaultDuration;return"forward"===t?n:n||r("forward")},o=t.duration||r(t.backward?"backward":"forward");void 0!==o&&n.push(`::view-transition-group(*){${ve}:${o};}`);const a=e=>Object.entries(e).map((([e,t])=>`${e}:${t};`)).join("");return n.push(`::view-transition-old(root){${a(we(e,{...t,type:"outgoing"}))}}`,`::view-transition-new(root){${a(we(e,{...t,type:"incoming"}))}}`),n})(r,{backward:c(),duration:u.duration}).forEach((e=>i.sheet?.insertRule(e)));const s=document.documentElement.classList;s.add(Ee);let l=!1;const d=()=>{l||(n(a),l=!0,s.remove(Ee))},f=()=>{t(!1),i.remove(),s.remove(Ee)};try{t(!0);const e=document.startViewTransition(d);t(e),e.finished.finally(f)}catch(e){console.error(e),d(),f()}})),!1)};e.on("prev",r((t=>e.prev({...t,[$e]:!0})),{back:!0,cond:e=>e.index>0&&!((e.fragment??1)&&n.fragmentIndex>0)})),e.on("next",r((t=>e.next({...t,[$e]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[$e]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let Ie;const Me=()=>(void 0===Ie&&(Ie="wakeLock"in navigator&&navigator.wakeLock),Ie),Oe=async()=>{const e=Me();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},Ae=async()=>{if(!Me())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&Oe()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await Oe(),e};((e=document.getElementById(":$p"))=>{(()=>{const e=p("view");a.dataset.bespokeView=e===l||e===c?e:""})();const t=(e=>{const t=p(e);return v({[e]:void 0}),t})("sync")||void 0;o.from(e,((...e)=>{const t=d.findIndex((e=>g()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],re({key:t})],[[1,1,1],Z(e)],[[1,1,0],M],[[1,1,1],k],[[1,0,0],T()],[[1,1,1],O],[[1,1,1],ne({history:!1})],[[1,1,0],A()],[[1,1,0],P],[[1,0,0],ee],[[1,1,0],le()],[[1,0,0],C()],[[1,0,0],Te],[[1,1,1],$],[[1,1,0],Ae]))})()}();</script></body></html>
