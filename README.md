@@ -50,6 +50,10 @@
 - [EX03-06 出生人口數](exercises/ex03-06.png)
 - [EX03-07 Tips](exercises/ex03-07.png)
 
+## 04 Machine Learning
+
+[04 Machine Learning Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/04-machine_learning.html)
+
 ## 05 Web API
 
 [05 Web API Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/05-web_api.html)
@@ -61,6 +65,7 @@
 - [EX05-01 Echo Bot](exercises/ex05-01.png)
 - [EX05-02 Ask Gemini](exercises/ex05-02.png)
 - [EX05-03 Reply Multi-type Messages](exercises/ex05-03.png)
+- [EX05-04 Reply Template Messages](exercises/ex05-04.png)
 
 
 
