@@ -72,6 +72,7 @@
 - [Gradio - Hello Gradio](https://huggingface.co/spaces/cchsuCourse/helloGradio)
 - [Gradio - Chat Bot](https://huggingface.co/spaces/cchsuCourse/chat)
 - [Gradio - MRT Stations](https://huggingface.co/spaces/cchsuCourse/mrt)
+- [Gradio - Customers Cluster](https://huggingface.co/spaces/cchsuCourse/cluster)
 
 
 
