@@ -67,7 +67,11 @@
 - [EX05-03 Reply Multi-type Messages](exercises/ex05-03.png)
 - [EX05-04 Reply Template Messages](exercises/ex05-04.png)
 
+## 06 Web System
 
+- [Gradio - Hello Gradio](https://huggingface.co/spaces/cchsuCourse/helloGradio)
+- [Gradio - Chat Bot](https://huggingface.co/spaces/cchsuCourse/chat)
+- [Gradio - MRT Stations](https://huggingface.co/spaces/cchsuCourse/mrt)
 
 
 
