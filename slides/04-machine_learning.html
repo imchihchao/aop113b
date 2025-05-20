@@ -434,7 +434,7 @@ labelname[<span class="hljs-number">5</span>]
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-paginate="true" data-theme="gaia" lang="zh-TW" data-marpit-pagination="64" style="--paginate:true;--theme:gaia;" data-marpit-pagination-total="117" data-size="16:9">
 <h3 id="%E9%9D%9E%E6%95%B8%E5%80%BC%E8%B3%87%E6%96%99%E8%BD%89%E6%8F%9Blabel-encoding-3">非數值資料轉換：Label Encoding</h3>
 <ul>
-<li>方法 2：針對<strong>標籤值</strong>使用 LabelEncoder</li>
+<li>方法 3：針對<strong>標籤值</strong>使用 LabelEncoder</li>
 </ul>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> LabelEncoder
 encoder = LabelEncoder()
@@ -466,8 +466,7 @@ df = pd.concat([df, encoded_df], axis=<span class="hljs-number">1</span>)
 <ul>
 <li>請針對資料集中的非數值資料進行編碼：
 <ul>
-<li>將 訂購 使用 LabelEncoder 的方式進行 Label Encoding</li>
-<li>將 學歷及連絡方式 使用 OrdinalEncoder 進行 Label Encofing</li>
+<li>將 學歷、連絡方式及訂購 使用 OrdinalEncoder 進行 Label Encofing</li>
 <li>將 工作及婚姻 使用 OneHotEncoder 進行 One-Hot Encoding</li>
 </ul>
 </li>
