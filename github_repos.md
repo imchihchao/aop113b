@@ -64,4 +64,6 @@
 |59|FlyFish0203|[https://github.com/FlyFish0203/flyfish](https://github.com/FlyFish0203/flyfish)|
 |60|Carol-0710|[https://github.com/Carol-0710/Homework](https://github.com/Carol-0710/Homework)|
 |61|anpppo|[https://github.com/anpppo/py_app](https://github.com/anpppo/py_app)|
-|62|ganbing0630|[https://github.com/ganbing0630/su3cl3](https://github.com/ganbing0630/su3cl3)
+|62|ganbing0630|[https://github.com/ganbing0630/su3cl3](https://github.com/ganbing0630/su3cl3)|
+|63|sy0822-love|[https://github.com/sy0822-love/shaoyu_py](https://github.com/sy0822-love/shaoyu_py)|
+
