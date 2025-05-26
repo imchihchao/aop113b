@@ -54,6 +54,8 @@
 
 [04 Machine Learning Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/04-machine_learning.html)
 
+- [EX04-01 汽車車型數值資料轉換](exercises/ex04-01.png)
+
 ## 05 Web API
 
 [05 Web API Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/05-web_api.html)
