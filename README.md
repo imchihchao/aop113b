@@ -54,6 +54,10 @@
 
 [04 Machine Learning Slides](https://htmlpreview.github.io/?https://github.com/imchihchao/aop113b/blob/main/slides/04-machine_learning.html)
 
+[爬取 ET Today 每日新聞標題](https://github.com/imchihchao/aop113b/blob/main/ml_crawler_ettoday_news.ipynb)
+
+[爬取 PTT 電影版文章內容](https://github.com/imchihchao/aop113b/blob/main/ml_crawler_ptt_movies.ipynb)
+
 - [EX04-01 汽車車型數值資料轉換](exercises/ex04-01.png)
 
 ## 05 Web API
