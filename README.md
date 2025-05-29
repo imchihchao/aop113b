@@ -59,6 +59,8 @@
 [爬取 PTT 電影版文章內容](https://github.com/imchihchao/aop113b/blob/main/ml_crawler_ptt_movies.ipynb)
 
 - [EX04-01 汽車車型數值資料轉換](exercises/ex04-01.png)
+- [EX04-02 客戶基本資料編碼](exercises/ex04-02.png)
+- [EX04-03 客戶分群](exercises/ex04-03.png)
 
 ## 05 Web API
 
