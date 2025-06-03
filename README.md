@@ -83,6 +83,13 @@
 - [Gradio - Customers Cluster](https://huggingface.co/spaces/cchsuCourse/cluster)
 - [Gradio - Reading Chat](https://github.com/imchihchao/aop113b/blob/main/ws_gradio_readingchat.ipynb)
 
+## Homework
 
+- HW 1/2
+- HW 2/2
+
+## Report
+
+- RP
 
 
