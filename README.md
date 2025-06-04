@@ -61,6 +61,9 @@
 - [EX04-01 汽車車型數值資料轉換](exercises/ex04-01.png)
 - [EX04-02 客戶基本資料編碼](exercises/ex04-02.png)
 - [EX04-03 客戶分群](exercises/ex04-03.png)
+- [EX04-04 加州房價](exercises/ex04-04.png)
+- [EX04-05 辨識鳶尾花](exercises/ex04-05.png)
+- [EX04-06 ET Today 新聞標題分類](exercises/ex04-06.png)
 
 ## 05 Web API
 
